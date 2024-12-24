@@ -1,60 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agger Grand</title>
-    
-    <!-- Google Fonts (for typography) -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- Link to your CSS file -->
-    <link rel="stylesheet" href="style/style.css">
+  <meta charset="UTF-8" />
+  <title>Agger Grand</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    .content {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 20px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      color: #999;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Agger Grand</h1>
+    <h2>Tell Us All The Dirt</h2>
+  </header>
+  
+  <div class="content">
+    <p>Welcome to Agger Grand! We’re here to shine a light on the latest and greatest news, scoops, and secrets. Ready to share yours?</p>
+    <p>Contact us anytime: <a href="mailto:aggergrand@gmail.com">aggergrand@gmail.com</a></p>
+  </div>
 
-    <!-- Header Section (Top of the page) -->
-    <header>
-        <h1>Welcome to Agger Grand</h1>
-    </header>
+  <footer>
+    &copy; <span id="year"></span> Agger Grand. All rights reserved.
+  </footer>
 
-    <!-- Hero Section (Big intro area with a bold statement) -->
-    <section class="hero">
-        <h1>Tell Us All The Dirt</h1>
-        <p>Building healthier soils for a sustainable future</p>
-    </section>
-
-    <!-- Main Section (About Us and other content) -->
-    <main>
-        <!-- About Us Section -->
-        <section>
-            <h2>About Us</h2>
-            <p>We are an ecosystem management company focused on creating healthy soil across the world.</p>
-        </section>
-
-        <!-- Contact Section -->
-
-            <section>
-                <h2>Contact Us</h2>
-                <form id="contactForm">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                    
-                    <button type="submit">Submit</button>
-                </form>
-            
-                <p id="formMessage"></p>
-            </section>
-           
-    </main>
-
-    <!-- Link to your JavaScript file -->
-    <script src="script/script.js"></script>
+  <script>
+    // Dynamically insert the current year in the footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
