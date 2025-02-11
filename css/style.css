@@ -1,0 +1,120 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: #e8f5e9; /* Light faded green */
+    color: #333;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header .logo {
+    max-width: 500px; /* Increase logo size */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Grid Layout */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Centered Motto Cell */
+  .grid-item.center {
+    grid-column: span 2;
+    background: #3e2411; /* Brown dirt color */
+    color: white;
+    padding: 30px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  /* Navigation Cells */
+  .grid-item {
+    background: white;
+    padding: 20px;  /* Reduce padding */
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+    height: 120px; /* Set fixed height */
+  }
+  
+  /* Hover Effect */
+  .grid-item:hover {
+    background: #c8e6c9; /* Lighter green */
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+  
+    .grid-item.center {
+      grid-column: span 1; /* Make it a single row */
+    }
+  }
+  
+  /* Video Embed */
+  .video {
+    margin-top: 20px;
+  }
+  
+  .video iframe {
+    max-width: 100%;
+    height: 700px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .content {
+      padding: 20px;
+    }
+  
+    .navbar .motto h2 {
+      font-size: 1rem;
+    }
+  }

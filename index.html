@@ -1,86 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agger Grand</title>
-  <style>
-    /* Basic Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: #fafafa;
-      padding: 20px;
-    }
-
-    header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      font-size: 1.2rem;
-      color: #555;
-    }
-
-    .content {
-      max-width: 600px;
-      margin: 0 auto;
-      background: #fff;
-      padding: 20px;
-      border: 1px solid #eee;
-      border-radius: 8px;
-    }
-
-    p {
-      line-height: 1.6;
-      margin-bottom: 10px;
-    }
-
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 20px;
-      color: #999;
-      font-size: 0.9rem;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-    <h1>Agger Grand</h1>
-    <h2>Tell Us All The Dirt</h2>
+    <img src="images/logo.jpg" alt="Agger Grand Logo" class="logo">
   </header>
-  
-  <div class="content">
-    <p>Welcome to Agger Grand! We’re here to shine a light on the latest and greatest news, scoops, and secrets. Ready to share yours?</p>
-    <p>Contact us anytime: <a href="mailto:aggergrand@gmail.com">aggergrand@gmail.com</a></p>
-  </div>
 
+  <!-- Main Grid Layout -->
+  <div class="grid-container">
+    <div class="grid-item center">
+      <h2>Tell Us All The Dirt</h2>
+    </div>
+    <a href="soil-testing.html" class="grid-item">Soil Testing</a>
+    <a href="soil-database.html" class="grid-item">Soil Database</a>
+    <a href="articles.html" class="grid-item">Articles</a>
+    <a href="about.html" class="grid-item">About Us</a>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="content">
+    <p>Our mission is to make soil data accessible to everyone, from home gardeners to large-scale growers.</p>
+    <p>We are developing a public soil database to provide real-time insights into nutrient composition, soil quality, and sustainable growing practices. Our free Soil Calculator offers personalized recommendations to help optimize plant growth, improve nutrient density, and support better soil management.</p>
+    <p>By combining hands-on soil testing with data-driven insights, Agger Grand empowers growers to make informed decisions that enhance both their crops and the environment. Whether you’re tending a backyard garden or managing a farm, we’re here to help you build healthier soil for a more abundant future.</p>
+    <p>Contact us anytime to receive a <strong>FREE</strong> soil analysis: <a href="mailto:aggergrand@gmail.com">aggergrand@gmail.com</a></p>
+    <div class="btn-container">
+      <a href="mailto:aggergrand@gmail.com" class="btn">Get Your Free Analysis</a>
+    </div>
+    
+    <!-- Video Embed -->
+    <div class="video">
+      <!-- The embed URL for your YouTube Shorts video -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/z3lmf2-Capo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  
+  <!-- Footer -->
   <footer>
     &copy; <span id="year"></span> Agger Grand. All rights reserved.
   </footer>
-
+  
   <script>
-    // Dynamically insert the current year in the footer
+    // Set the current year in the footer
     document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Toggle the hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
   </script>
 </body>
 </html>
