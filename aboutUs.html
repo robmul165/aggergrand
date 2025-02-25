@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Agger Grand</title>
+  <!-- Import Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Inline styles for demonstration; ideally, put these in your style.css -->
+  <style>
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .topbar .logo {
+      max-width: 150px;
+      height: auto;
+    }
+    .topbar nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .topbar nav a.active {
+      color: #8B4513; /* Highlight color for the active page */
+    }
+    .content {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: left;
+      line-height: 1.6;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <!-- Top Bar Navigation -->
+  <div class="topbar">
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="images/logo.jpg" alt="Agger Grand Logo" class="logo">
+      </a>
+    </div>
+    <nav>
+      <a href="soil-database.html" class="header">Soil Database</a>
+      <a href="soil-testing.html" class="header">Soil Testing</a>
+      <a href="blog.html" class="header">Blog</a>
+      <a href="about.html" class="header">About Us</a>
+    </nav>
+  </div>
+
+  <!-- About Us Content -->
+  <div class="content">
+    <h1>About Us</h1>
+    <p>We are a small team of passionate and experienced gardeners. Our mission is to harness artificial intelligence to create the AG Model—a system that accurately predicts optimal growing practices and maintenance for specific regions. We aspire to evolve into an ecosystem management software platform. We believe that healthy soil is the cornerstone of a thriving ecosystem. Soil is a remarkably complex subenvironment, teeming with diverse microorganisms and minerals that work together to nurture robust, sprawling root systems.</p>
+  </div>
+  <!-- Projects and Work Section -->
+  <div class="content projects">
+    <h2>Our Work</h2>
+    <p>We have conducted extensive soil testing and remediation plans for various clients, helping them better understand and manage their soil health.</p>
+
+    <h3>Soil Testing in Action</h3>
+    <p>Watch our soil testing process in these videos:</p>
+
+    <div class="aboutvideos">
+      <iframe src="https://www.youtube.com/embed/nhMuUGGMazA" title="Soil Testing Process 1" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/E2wJ4JSjoK8" title="Soil Testing Process 2" allowfullscreen></iframe>
+    </div>
+
+    <h3>Case Studies</h3>
+    <ul>
+      <p>🌱 <strong>Church Soil Remediation:</strong> We tested soil for a church and discovered high levels of arsenic. We provided both a traditional remediation plan and a <strong>bioremediation strategy</strong> using plants that absorb arsenic.</p>
+
+      <p>🌾 <strong>Certified Organic Farms in Central Jersey:</strong> We've worked with organic farms to <strong>educate and test their soil</strong>, helping them optimize nutrient use while staying within organic farming guidelines.</p>
+      
+      <p>🏛 <strong>Rutgers Environmental Stewards Program:</strong> We are actively engaged with Rutgers' program, furthering our knowledge and contributing to community soil management initiatives.</p>
+    </ul>
+  </div>
+
+
+  <footer>
+    &copy; <span id="year"></span> Agger Grand. All rights reserved.
+  </footer>
+  <script>
+    // Set the current year in the footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

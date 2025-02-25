@@ -13,6 +13,11 @@
     text-align: center;
     padding: 20px;
   }
+
+  .opening p {
+    margin-bottom: 20px; /* Adjust spacing as needed */
+    line-height: 1.6; /* Improves readability */
+  }
   
   /* Header */
   header {
@@ -21,7 +26,7 @@
   }
   
   header .logo {
-    max-width: 500px; /* Increase logo size */
+    max-width: 550px; /* Increase logo size */
     height: auto;
     display: block;
     margin: 0 auto;
@@ -118,3 +123,79 @@
       font-size: 1rem;
     }
   }
+
+  /* ABOUT US */
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .topbar .logo {
+      max-width: 150px;
+      height: auto;
+    }
+    .topbar nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: left;
+      line-height: 1.6;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+     /* Hover Effect */
+  .header:hover {
+    background: #c8e6c9; /* Lighter green */
+  }
+  /* Navigation Links */
+.topbar nav a {
+  display: inline-block; /* Ensures the whole link is clickable */
+  padding: 10px 20px; /* Adds padding around text */
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: background 0.3s ease; /* Smooth transition */
+}
+
+/* Hover Effect - Full Background */
+.topbar nav a:hover {
+  background: #c8e6c9; /* Lighter green */
+  border-radius: 5px; /* Optional: Adds rounded corners */
+}
+.content h1, 
+.content h2, 
+.content h3 {
+  text-align: center;
+}
+
+.aboutvideos {
+  display: flex;
+  justify-content: space-between; /* Pushes videos to far left & far right */
+  gap: 20px; /* Adds space between them */
+  margin-top: 20px;
+}
+
+.aboutvideos iframe {
+  width: 45%; /* Adjust width to fit nicely */
+  height: 250px; /* Standard YouTube size */
+  border-radius: 8px;
+}

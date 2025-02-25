@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data-to-Plant Animation</title>
+  <style>
+    /* Container for the animation */
+    #animation-container {
+      position: relative;
+      width: 600px;
+      height: 400px;
+      margin: 50px auto;
+      overflow: hidden;
+      background: #c2b280; /* A light soil-like background */
+      border: 2px solid #999;
+      border-radius: 10px;
+    }
+    /* Bucket image (adjust path and size as needed) */
+    .bucket {
+      position: absolute;
+      top: 20px;
+      left: 50px;
+      width: 100px;
+    }
+    /* Soil area at the bottom */
+    .soil {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: #8B4513; /* Brown soil */
+    }
+    /* Plant image, hidden initially */
+    .plant {
+      position: absolute;
+      bottom: 100px; /* starts just above the soil */
+      left: 250px;
+      width: 50px;
+      opacity: 0;
+      transform: scaleY(0);
+      transform-origin: bottom;
+      /* Grow animation: will start after a delay */
+      animation: grow 3s forwards;
+      animation-delay: 5s;
+    }
+    @keyframes grow {
+      to {
+        opacity: 1;
+        transform: scaleY(1);
+      }
+    }
+    /* Style for falling digits */
+    .digit {
+      position: absolute;
+      font-family: monospace;
+      font-size: 20px;
+      color: #000;
+      animation: fall 3s linear forwards;
+    }
+    @keyframes fall {
+      from {
+        top: 70px;
+        opacity: 1;
+      }
+      to {
+        top: 320px;
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="animation-container">
+    <!-- Bucket image: replace "bucket.png" with your bucket image -->
+    <img src="bucket.png" alt="Bucket" class="bucket">
+    
+    <!-- Soil area -->
+    <div class="soil"></div>
+    
+    <!-- Plant image: replace "plant.png" with your plant image -->
+    <img src="plant.png" alt="Plant" class="plant">
+  </div>
+
+  <script>
+    // Get the container where the animation happens
+    const container = document.getElementById('animation-container');
+
+    // Function to create a falling digit (1 or 0)
+    function createDigit() {
+      const digit = document.createElement('div');
+      digit.classList.add('digit');
+      // Randomly choose between '1' and '0'
+      digit.textContent = Math.random() < 0.5 ? '0' : '1';
+      // Set starting position near the bucket's spout
+      digit.style.left = '120px';  // Adjust horizontal position as needed
+      digit.style.top = '70px';
+      container.appendChild(digit);
+      
+      // Remove the digit after the animation completes (3 seconds)
+      setTimeout(() => {
+        container.removeChild(digit);
+      }, 3000);
+    }
+
+    // Generate a new digit every 500 milliseconds
+    setInterval(createDigit, 500);
+  </script>
+</body>
+</html>
