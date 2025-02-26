@@ -1,172 +1,143 @@
 /* Basic Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Global Styles */
-  body {
-    font-family: 'Montserrat', sans-serif;
-    background: #e8f5e9; /* Light faded green */
-    color: #333;
-    text-align: center;
-    padding: 20px;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .opening p {
-    margin-bottom: 20px; /* Adjust spacing as needed */
-    line-height: 1.6; /* Improves readability */
-  }
-  
-  /* Header */
-  header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  header .logo {
-    max-width: 550px; /* Increase logo size */
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-  
-  /* Grid Layout */
+/* Global Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #e8f5e9; /* Light faded green */
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+.opening p {
+  margin-bottom: 20px; /* Adjust spacing as needed */
+  line-height: 1.6; /* Improves readability */
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header .logo {
+  max-width: 550px; /* Increase logo size */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Keeps a 2x2 layout */
+  gap: 20px; /* Adjust spacing between links */
+  max-width: 600px; /* Adjust container width */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.grid-item {
+  background: white;
+  padding: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.grid-item:hover {
+  background: #c8e6c9;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
   .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* Centered Motto Cell */
-  .grid-item.center {
-    grid-column: span 2;
-    background: #3e2411; /* Brown dirt color */
-    color: white;
-    padding: 30px;
-    font-size: 1.5rem;
-    border-radius: 8px;
-    text-align: center;
-  }
-  
-  /* Navigation Cells */
-  .grid-item {
-    background: white;
-    padding: 20px;  /* Reduce padding */
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: background 0.3s ease;
-    height: 120px; /* Set fixed height */
-  }
-  
-  /* Hover Effect */
-  .grid-item:hover {
-    background: #c8e6c9; /* Lighter green */
-  }
-  
-  /* Footer */
-  footer {
-    margin-top: 40px;
-    font-size: 0.9rem;
-    color: #666;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 600px) {
-    .grid-container {
       grid-template-columns: 1fr;
       grid-template-rows: auto;
-    }
-  
-    .grid-item.center {
-      grid-column: span 1; /* Make it a single row */
-    }
   }
-  
-  /* Video Embed */
-  .video {
-    margin-top: 20px;
-  }
-  
-  .video iframe {
-    max-width: 100%;
-    height: 700px;
-  }
-  
-  /* Footer */
-  footer {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 0.9rem;
-    color: #666;
-  }
-  
-  /* Responsive Adjustments */
-  @media (max-width: 768px) {
-    .content {
-      padding: 20px;
-    }
-  
-    .navbar .motto h2 {
-      font-size: 1rem;
-    }
-  }
+}
 
-  /* ABOUT US */
+/* Video Embed */
+.video {
+  max-width: 800px; /* Matches the width of .content */
+  width: 100%;
+  margin: 40px auto; /* Centers the box and adds space above/below */
+  background-color: #fff; /* White background to match .content */
+  padding: 30px; /* More padding for spacing */
+  border: 1px solid #ddd; /* Light border for separation */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds depth */
+}
 
-    .topbar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px 20px;
-      background: #fff;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-    .topbar .logo {
-      max-width: 150px;
-      height: auto;
-    }
-    .topbar nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
+.video iframe {
+  display: block;
+  width: 100%; /* Makes the video stretch to fit container */
+  height: 500px; /* Increased height for better viewing */
+}
 
-    .content {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      text-align: left;
-      line-height: 1.6;
-    }
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 0.9rem;
-      color: #666;
-    }
+/* ABOUT US */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-     /* Hover Effect */
-  .header:hover {
-    background: #c8e6c9; /* Lighter green */
-  }
-  /* Navigation Links */
+.topbar .logo {
+  max-width: 150px;
+  height: auto;
+}
+
+.topbar nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.content {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: left;
+  line-height: 1.6;
+}
+
+.content h1, 
+.content h2, 
+.content h3 {
+  text-align: center;
+}
+
+/* Hover Effect */
+.header:hover {
+  background: #c8e6c9; /* Lighter green */
+}
+
+/* Navigation Links */
 .topbar nav a {
   display: inline-block; /* Ensures the whole link is clickable */
   padding: 10px 20px; /* Adds padding around text */
@@ -181,11 +152,6 @@
   background: #c8e6c9; /* Lighter green */
   border-radius: 5px; /* Optional: Adds rounded corners */
 }
-.content h1, 
-.content h2, 
-.content h3 {
-  text-align: center;
-}
 
 .aboutvideos {
   display: flex;
@@ -198,4 +164,46 @@
   width: 45%; /* Adjust width to fit nicely */
   height: 250px; /* Standard YouTube size */
   border-radius: 8px;
+}
+
+.blog-post {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h3 {
+  margin-bottom: 5px;
+}
+
+.blog-post a {
+  text-decoration: none;
+  color: #007acc;
+  transition: color 0.3s ease;
+}
+
+.blog-post a:hover {
+  color: #005a99;
+}
+
+.content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.content ul li {
+  padding: 5px 0;
+  font-size: 1.1rem;
+}
+
+/* Default h3 styling for all pages */
+h3 {
+  margin-top: 20px;
+}
+
+/* Special styling only for Soil Testing page */
+.soil-pricing h3 {
+  color: #278037; /* Adjust color for package titles */
 }
