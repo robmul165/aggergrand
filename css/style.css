@@ -84,6 +84,19 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
+
+  .topbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .topbar nav {
+    margin-top: 10px;
+  }
+
+  .topbar .logo {
+    max-width: 120px;
+  }
 }
 
 /* Video Embed */
@@ -104,27 +117,6 @@ footer {
   height: 500px; /* Increased height for better viewing */
 }
 
-/* ABOUT US */
-.topbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.topbar .logo {
-  max-width: 150px;
-  height: auto;
-}
-
-.topbar nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
 
 .content {
   max-width: 800px;
@@ -148,20 +140,34 @@ footer {
   background: #c8e6c9; /* Lighter green */
 }
 
+/* Topbar */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.topbar .logo {
+  max-width: 150px;
+  height: auto;
+}
+
 /* Navigation Links */
 .topbar nav a {
-  display: inline-block; /* Ensures the whole link is clickable */
-  padding: 10px 20px; /* Adds padding around text */
+  display: inline-block;
+  padding: 10px 20px;
   text-decoration: none;
   color: #333;
   font-weight: bold;
-  transition: background 0.3s ease; /* Smooth transition */
+  transition: background 0.3s ease;
 }
 
-/* Hover Effect - Full Background */
 .topbar nav a:hover {
-  background: #c8e6c9; /* Lighter green */
-  border-radius: 5px; /* Optional: Adds rounded corners */
+  background: #c8e6c9;
+  border-radius: 5px;
 }
 
 .aboutvideos {
