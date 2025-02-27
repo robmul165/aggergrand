@@ -21,29 +21,40 @@ body {
 
 /* Header */
 header {
+  max-width: 800px; /* Matches your content width */
+  margin: 40px auto 20px auto; /* Centers header with vertical spacing */
   text-align: center;
-  margin-bottom: 20px;
 }
 
 header .logo {
-  max-width: 550px; /* Increase logo size */
+  max-width: 100%;  /* Ensures the logo scales within the header */
   height: auto;
   display: block;
   margin: 0 auto;
 }
+.calculator-container {
+  max-width: 800px;  /* Matches the .content width */
+  margin: 40px auto; /* Centers it with vertical spacing */
+}
 
+.calculator-container .logo {
+  max-width: 100%;   /* Ensures it scales responsively */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Keeps a 2x2 layout */
-  gap: 20px; /* Adjust spacing between links */
-  max-width: 600px; /* Adjust container width */
+  grid-template-columns: 1fr 1fr;  /* Two columns layout */
+  gap: 20px;
+  max-width: 800px;  /* Increased from 600px to match .content */
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px;     /* Optional: adds spacing around the grid */
 }
 
 .grid-item {
-  background: white;
-  padding: 30px;
+  background: white;  /* Keeps each tile white */
+  padding: 40px;      /* Increased padding for a larger, more spacious look */
   font-size: 1.2rem;
   font-weight: bold;
   text-decoration: none;
@@ -70,8 +81,8 @@ footer {
 /* Responsive Design */
 @media (max-width: 600px) {
   .grid-container {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
 }
 
@@ -180,12 +191,12 @@ footer {
 
 .blog-post a {
   text-decoration: none;
-  color: #007acc;
+  color: #60401C;
   transition: color 0.3s ease;
 }
 
 .blog-post a:hover {
-  color: #005a99;
+  color: #60401C;
 }
 
 .content ul {
