@@ -14,9 +14,126 @@ body {
   padding: 20px;
 }
 
-.opening p {
-  margin-bottom: 20px; /* Adjust spacing as needed */
-  line-height: 1.6; /* Improves readability */
+.content {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: left;
+  line-height: 1.6;
+  padding: 15px 20px;
+}
+
+.content h1, 
+.content h2, 
+.content h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Mission Section Styling */
+.mission-section {
+  text-align: center;
+  max-width: 800px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mission-section h1 {
+  color: #278037;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.mission-highlight {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #1c5a28;
+  margin-bottom: 10px;
+}
+
+.mission-section p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+/* Call-To-Action (CTA) Box */
+.cta-box {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cta-box p {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.cta-box a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #278037;
+  text-decoration: none;
+}
+
+.cta-box a:hover {
+  text-decoration: underline;
+  color: #1c5a28;
+}
+
+/* Hover Effect */
+.header:hover {
+  background: #c8e6c9;
+}
+
+/* Topbar */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.topbar .logo {
+  max-width: 150px;
+  height: auto;
+}
+
+/* Navigation Links */
+.topbar nav a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.topbar nav a:hover {
+  background: #c8e6c9;
+  border-radius: 5px;
+}
+.content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.content ul li {
+  padding: 5px 0;
+  font-size: 1.1rem;
+}
+
+/* Default h3 styling for all pages */
+h3 {
+  margin-top: 20px;
 }
 
 /* Header */
@@ -31,6 +148,12 @@ header .logo {
   height: auto;
   display: block;
   margin: 0 auto;
+}
+
+/* Homepage*/
+.opening p {
+  margin-bottom: 20px; /* Adjust spacing as needed */
+  line-height: 1.6; /* Improves readability */
 }
 .calculator-container {
   max-width: 800px;  /* Matches the .content width */
@@ -88,6 +211,7 @@ footer {
   .topbar {
     flex-direction: column;
     align-items: center;
+    padding: 10px 20px;
   }
 
   .topbar nav {
@@ -117,58 +241,7 @@ footer {
   height: 500px; /* Increased height for better viewing */
 }
 
-
-.content {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  text-align: left;
-  line-height: 1.6;
-}
-
-.content h1, 
-.content h2, 
-.content h3 {
-  text-align: center;
-}
-
-/* Hover Effect */
-.header:hover {
-  background: #c8e6c9; /* Lighter green */
-}
-
-/* Topbar */
-.topbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.topbar .logo {
-  max-width: 150px;
-  height: auto;
-}
-
-/* Navigation Links */
-.topbar nav a {
-  display: inline-block;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-.topbar nav a:hover {
-  background: #c8e6c9;
-  border-radius: 5px;
-}
+/*About Us*/
 
 .aboutvideos {
   display: flex;
@@ -182,45 +255,201 @@ footer {
   height: 250px; /* Standard YouTube size */
   border-radius: 8px;
 }
-
+/* Blog Article Links - Keep Consistent Color */
 .blog-post {
   background: #fff;
-  padding: 15px;
-  margin-bottom: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 15px;  /* Reduce padding inside the articles */
+  margin-bottom: 10px; /* Reduce spacing between articles */
 }
 
 .blog-post h3 {
+  margin-bottom: 5px; /* Reduce space under titles */
+}
+
+.blog-post p {
+  margin-top: 5px;
   margin-bottom: 5px;
 }
 
 .blog-post a {
+  color: #60401C; /* Brown color for blog links */
   text-decoration: none;
-  color: #60401C;
-  transition: color 0.3s ease;
+  font-weight: bold;
+}
+
+.blog-post a:visited {
+  color: #60401C; /* Prevent visited links from turning purple */
 }
 
 .blog-post a:hover {
-  color: #60401C;
+  color: #1c5a28;
+  text-decoration: underline;
 }
 
-.content ul {
-  list-style-type: none;
-  padding-left: 0;
+/* Podcast Table - Keep Consistent Color */
+.podcast-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
 }
 
-.content ul li {
-  padding: 5px 0;
+.podcast-table td {
+  padding: 10px;
+  border: 1px solid #ddd; /* Light border for structure */
+  text-align: center;
+}
+
+.podcast-table a {
+  text-decoration: none;
+  color: #60401C; /* Match blog post link color */
+  font-weight: bold;
+}
+
+.podcast-table a:visited {
+  color: #60401C; /* Prevent visited links from turning purple */
+}
+
+.podcast-table a:hover {
+  text-decoration: underline;
+  color: #1c5a28;
+}
+/* Special styling only for Soil Testing page */
+.soil-pricing h3 {
+  color: #278037;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.soil-pricing {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.soil-pricing h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.soil-test {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.soil-test h3 {
+  color: #278037;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.soil-test p {
+  margin-bottom: 10px;
+}
+
+.soil-test ul {
+  list-style-type: disc;  /* Ensures standard bullet points */
+  margin-left: 20px;  /* Adds spacing for indentation */
+  padding-left: 20px;
+}
+
+.soil-test ul li {
+  margin-bottom: 5px;  /* Adds spacing between bullet points */
   font-size: 1.1rem;
 }
 
-/* Default h3 styling for all pages */
-h3 {
-  margin-top: 20px;
+/* How to Order a Soil Test - Styling */
+.order-soil-test {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
 }
 
-/* Special styling only for Soil Testing page */
-.soil-pricing h3 {
-  color: #278037; /* Adjust color for package titles */
+.order-soil-test h2 {
+  text-align: center;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.order-soil-test p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.order-soil-test ul {
+  list-style-type: disc; /* Proper bullet points */
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.order-soil-test ul li {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+/* Style for the email link */
+.order-soil-test a {
+  color: #278037;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.order-soil-test a:hover {
+  text-decoration: underline;
+}
+
+/* Video Section Styling */
+.soil-testing-video {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.soil-testing-video h2 {
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.soil-testing-video p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.aboutvideos {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.aboutvideos iframe {
+  width: 45%; /* Adjust width to fit nicely */
+  height: 250px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Responsive Fix for Mobile */
+@media (max-width: 600px) {
+  .aboutvideos {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .aboutvideos iframe {
+      width: 100%;
+      height: 200px;
+  }
 }

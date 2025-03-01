@@ -1,0 +1,82 @@
+/* Blog Article Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #e8f5e9;
+    color: #333;
+    text-align: left;
+    padding: 20px;
+  }
+  
+  .content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    color: #000000;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  ul li {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  a {
+    color: #278037;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Topbar Navigation */
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .topbar .logo {
+    max-width: 150px;
+    height: auto;
+  }
+  
+  .topbar nav a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .topbar nav a:hover {
+    color: #1c5a28;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;  /* Forces centering */
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #666;
+  }
