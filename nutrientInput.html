@@ -30,17 +30,18 @@
       <p>Enter your soil test data below to generate personalized recommendations and analysis for healthier soil.</p>
     </div>
 
-    <!-- AG Model Form -->
-    <form id="agModelForm">
       
 <!-- 1) GENERAL INFORMATION -->
 <div class="form-section">
   <h3>General Information</h3>
   <div class="general-info-grid">
+    <!-- Profile Name -->
     <div class="form-group">
       <label for="soilName">Profile Name</label>
       <input type="text" id="soilName" name="soilName" required>
     </div>
+
+    <!-- Soil Media -->
     <div class="form-group">
       <label for="soilMedia">Soil Media</label>
       <select id="soilMedia" name="soilMedia" required>
@@ -50,6 +51,42 @@
         <option value="natural_soil">Natural Soil</option>
         <option value="compost">Compost</option>
         <option value="seed_starting_mix">Seed Starting Mix</option>
+      </select>
+    </div>
+
+    <!-- Climate Zone Selector -->
+    <div class="form-group">
+      <label for="climateZone">Plant Hardiness Zone</label>
+      <select id="climateZone" name="climateZone" required>
+        <option value="">Select USDA hardiness zone...</option>
+        <option value="1a">1a</option>
+        <option value="1b">1b</option>
+        <option value="2a">2a</option>
+        <option value="2b">2b</option>
+        <option value="3a">3a</option>
+        <option value="3b">3b</option>
+        <option value="3c">3c</option>
+        <option value="4a">4a</option>
+        <option value="4b">4b</option>
+        <option value="4c">4c</option>
+        <option value="5a">5a</option>
+        <option value="5b">5b</option>
+        <option value="6a">6a</option>
+        <option value="6b">6b</option>
+        <option value="7a">7a</option>
+        <option value="7b">7b</option>
+        <option value="8a">8a</option>
+        <option value="8b">8b</option>
+        <option value="9a">9a</option>
+        <option value="9b">9b</option>
+        <option value="10a">10a</option>
+        <option value="10b">10b</option>
+        <option value="11a">11a</option>
+        <option value="11b">11b</option>
+        <option value="12a">12a</option>
+        <option value="12b">12b</option>
+        <option value="13a">13a</option>
+        <option value="13b">13b</option>
       </select>
     </div>
   </div>
@@ -162,6 +199,7 @@
       <!-- Buttons -->
       <div class="buttons">
         <button type="submit" class="btn btn-primary">Save Profile</button>
+        <button type="submit" class="btn btn-primary">Get Recommendations</button>
         <button type="reset" class="btn btn-secondary">Reset</button>
       </div>
     </form>

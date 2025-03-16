@@ -1,0 +1,43 @@
+/* Restore Content Box Formatting */
+.content {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: left;
+    line-height: 1.6;
+    padding: 15px 20px;
+  }
+  
+  .content h1, 
+  .content h2, 
+  .content h3 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  /* Ensure buttons are centered inside the content box */
+  .button-container {
+    display: flex;
+    justify-content: center; /* Centers button horizontally */
+    margin-top: 15px;
+  }
+  
+  /* Restore Button Styling */
+  .button-container a {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #278037;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background 0.3s ease;
+  }
+  
+  .button-container a:hover {
+    background-color: #1c5a28;
+  }

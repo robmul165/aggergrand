@@ -44,7 +44,7 @@ body {
 }
 
 .mission-section h1 {
-  color: #278037;
+  color: #000000;
   font-size: 1.8rem;
   margin-bottom: 10px;
 }
@@ -52,7 +52,7 @@ body {
 .mission-highlight {
   font-size: 1.3rem;
   font-weight: bold;
-  color: #1c5a28;
+  color: #278037;
   margin-bottom: 10px;
 }
 
@@ -257,7 +257,7 @@ footer {
 }
 /* Blog Article Links - Keep Consistent Color */
 .blog-post {
-  background: #fff;
+  background: #f5f5f5;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 10px 15px;  /* Reduce padding inside the articles */
@@ -274,17 +274,17 @@ footer {
 }
 
 .blog-post a {
-  color: #60401C; /* Brown color for blog links */
+  color: #278037; 
   text-decoration: none;
   font-weight: bold;
 }
 
 .blog-post a:visited {
-  color: #60401C; /* Prevent visited links from turning purple */
+  color: #278037; /* Prevent visited links from turning purple */
 }
 
 .blog-post a:hover {
-  color: #1c5a28;
+  color: #60401C;
   text-decoration: underline;
 }
 
@@ -303,17 +303,17 @@ footer {
 
 .podcast-table a {
   text-decoration: none;
-  color: #60401C; /* Match blog post link color */
+  color: #000000; 
   font-weight: bold;
 }
 
 .podcast-table a:visited {
-  color: #60401C; /* Prevent visited links from turning purple */
+  color: #278037;
 }
 
 .podcast-table a:hover {
   text-decoration: underline;
-  color: #1c5a28;
+  color: #60401C;
 }
 /* Special styling only for Soil Testing page */
 .soil-pricing h3 {
@@ -334,11 +334,11 @@ footer {
 }
 
 .soil-test {
-  background: #fff;
+  background: #f5f5f5;
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .soil-test h3 {
