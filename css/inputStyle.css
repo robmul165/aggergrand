@@ -10,45 +10,134 @@ body {
   font-family: 'Montserrat', sans-serif;
   background: #e8f5e9; /* Light faded green */
   color: #333;
-  text-align: center;
   padding: 20px;
 }
 
-/* Header */
-header {
-  max-width: 800px;
-  margin: 40px auto 20px auto;
-  text-align: center;
+/* Top Bar */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-header .logo {
-  max-width: 100%;
+.topbar .logo {
+  max-width: 150px;
   height: auto;
-  display: block;
-  margin: 0 auto;
+}
+/* Navigation Links */
+.topbar nav a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: background 0.3s ease;
 }
 
-/* Form Content */
+.topbar nav a:hover {
+  background: #c8e6c9;
+  border-radius: 5px;
+}
+.content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.content ul li {
+  padding: 5px 0;
+  font-size: 1.1rem;
+}
+
+/* Main Form Container */
 .content {
   max-width: 800px;
   margin: 40px auto;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  text-align: left;
   line-height: 1.6;
   padding: 20px;
+  text-align: center;
 }
 
-.content h1, 
+/* Headings */
+
+.content h1 {
+  text-align: center;
+} 
 .content h2, 
 .content h3 {
-  text-align: center;
   margin-bottom: 15px;
   color: #278037;
+  text-align: left;
+}
+/* Adjust General Information to use only 2 columns */
+.general-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px;
+}
+/* General Informatio */
+.general-info-grid .form-group input,
+.general-info-grid .form-group select {
+  height: 42px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd; /* Matches other input fields */
+  border-radius: 5px;
+  text-align: left;
+  background-color: white;
 }
 
-/* Form Styling */
+/* Fix border color on focus */
+.general-info-grid .form-group input:focus,
+.general-info-grid .form-group select:focus {
+  outline: none;
+  border-color: #c8e6c9; /* Matches focus effect of other fields */
+  box-shadow: 0 0 5px rgba(200, 230, 201, 0.6);
+}
+
+/* Ensure Additional Parameters aligns properly */
+.additional-parameters-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 25px;
+}
+/* Fix Additional Parameters grid to properly align labels */
+.additional-parameters-grid .form-group {
+  display: flex;
+  flex-direction: column; /* Ensures label stays above input */
+  align-items: flex-start;
+}
+
+/* Ensure consistency in label alignment */
+.additional-parameters-grid label {
+  margin-bottom: 5px; /* Space between label and input */
+  font-weight: 500;
+}
+
+/* Ensure input boxes align properly */
+.additional-parameters-grid input {
+  width: 100%;
+  height: 42px; /* Match other input heights */
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Form Section */
+.form-description {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .form-section {
   margin-bottom: 25px;
   padding-bottom: 15px;
@@ -59,48 +148,69 @@ header .logo {
   border-bottom: none;
 }
 
-.form-row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -10px;
+/* Grid-based layout for nutrient inputs */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 15px;
+  margin-top: 10px;
 }
 
+/* Form Groups */
 .form-group {
-  flex: 1 1 250px;
-  margin: 0 10px 15px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: left;
 }
 
+/* Label & Tiny Question Mark Tooltip */
 label {
-  display: block;
-  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
   font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 0.95rem;
 }
 
-input[type="text"],
-input[type="number"],
-input[type="date"],
-select {
+/* Tiny Question Mark */
+.info-tooltip {
+  font-size: 0.75rem;
+  color: #278037;
+  margin-left: 4px;
+  text-decoration: none;
+}
+
+.info-tooltip:hover {
+  text-decoration: underline;
+}
+
+/* Input Fields */
+input[type="number"] {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
 }
 
-input[type="text"]:focus,
-input[type="number"]:focus,
-input[type="date"]:focus,
-select:focus {
-  outline: none;
-  border-color: #c8e6c9;
-  box-shadow: 0 0 0 2px rgba(200, 230, 201, 0.3);
+/* Remove Number Input Arrows */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Remove for Firefox */
 }
 
 /* Buttons */
 .buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 20px;
   margin-top: 20px;
 }
 
@@ -133,45 +243,20 @@ select:focus {
   background-color: #c8e6c9;
 }
 
-/* Validation */
-.validation-message {
-  color: #f44336;
-  font-size: 0.85rem;
-  margin-top: 3px;
-  display: none;
-}
-
-.invalid input {
-  border-color: #f44336;
-}
-
-.invalid .validation-message {
-  display: block;
-}
-
-/* Form description/instruction */
-.form-description {
-  background: #f5f5f5;
-  padding: 15px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.form-description p {
-  font-size: 1.1rem;
-  margin-bottom: 5px;
-}
-
-/* Footer */
-footer {
-  margin-top: 40px;
-  font-size: 0.9rem;
-  color: #666;
-}
-
-/* Responsive Design */
+/* Responsive Layout */
 @media (max-width: 600px) {
+  .form-grid {
+    grid-template-columns: 1fr; /* One column on small screens */
+  }
+
+  .form-group {
+    width: 100%;
+  }
+  .form-group input,
+  .form-group select {
+    width: 100%;
+}
+
   .buttons {
     flex-direction: column;
     gap: 10px;
@@ -180,45 +265,4 @@ footer {
   .btn {
     width: 100%;
   }
-
-  .form-group {
-    flex: 1 1 100%;
-  }
 }
-
-
-/* Hover Effect */
-.header:hover {
-  background: #c8e6c9;
-}
-
-/* Topbar */
-.topbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.topbar .logo {
-  max-width: 150px;
-  height: auto;
-}
-
-/* Navigation Links */
-.topbar nav a {
-  display: inline-block;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-.topbar nav a:hover {
-  background: #c8e6c9;
-  border-radius: 5px;
-}
-

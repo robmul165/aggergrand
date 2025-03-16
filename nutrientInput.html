@@ -22,190 +22,149 @@
       <a href="aboutUs.html" class="header">About Us</a>
     </nav>
   </div>
+
   <!-- Main Content -->
   <div class="content">
     <h1>🌱 AG Model Input Form</h1>
-    
     <div class="form-description">
       <p>Enter your soil test data below to generate personalized recommendations and analysis for healthier soil.</p>
     </div>
 
+    <!-- AG Model Form -->
     <form id="agModelForm">
-      <div class="form-section">
-        <h3>General Information</h3>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="companyId">Company ID</label>
-            <input type="number" id="companyId" name="companyId" required>
-            <div class="validation-message">Please enter a valid Company ID</div>
-          </div>
-          <div class="form-group">
-            <label for="companyName">Company Name</label>
-            <input type="text" id="companyName" name="companyName" required>
-            <div class="validation-message">Please enter a Company Name</div>
-          </div>
-          <div class="form-group">
-            <label for="jobName">Job Name</label>
-            <input type="text" id="jobName" name="jobName" required>
-            <div class="validation-message">Please enter a Job Name</div>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="runDate">Run Date</label>
-            <input type="date" id="runDate" name="runDate" required>
-            <div class="validation-message">Please select a valid Run Date</div>
-          </div>
-          <div class="form-group">
-            <label for="batchDate">Batch Date</label>
-            <input type="date" id="batchDate" name="batchDate" required>
-            <div class="validation-message">Please select a valid Batch Date</div>
-          </div>
-          <div class="form-group">
-            <label for="submittedBy">Submitted By</label>
-            <input type="text" id="submittedBy" name="submittedBy" required>
-            <div class="validation-message">Please enter a Submitter name</div>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="batchId">Batch ID</label>
-            <input type="number" id="batchId" name="batchId" required>
-            <div class="validation-message">Please enter a valid Batch ID</div>
-          </div>
-          <div class="form-group">
-            <label for="sampleLocation">Sample Location</label>
-            <input type="text" id="sampleLocation" name="sampleLocation" required>
-            <div class="validation-message">Please enter a Sample Location</div>
-          </div>
-          <div class="form-group">
-            <label for="labNumber">Lab Number</label>
-            <input type="number" id="labNumber" name="labNumber" required>
-            <div class="validation-message">Please enter a valid Lab Number</div>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="sampleDepth">Sample Depth (inches)</label>
-            <input type="number" id="sampleDepth" name="sampleDepth" required>
-            <div class="validation-message">Please enter a valid Sample Depth</div>
-          </div>
-          <div class="form-group">
-            <label for="testId">Test ID</label>
-            <input type="text" id="testId" name="testId" value="standard_test" required>
-            <div class="validation-message">Please enter a valid Test ID</div>
-          </div>
-          <div class="form-group">
-            <label for="bulkDensity">Bulk Density (g/cm³)</label>
-            <input type="number" id="bulkDensity" name="bulkDensity" value="1.33" step="0.01" required>
-            <div class="validation-message">Please enter a valid Bulk Density</div>
-          </div>
-        </div>
-      </div>
       
-      <div class="form-section">
-        <h3>Primary Soil Parameters</h3>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="tecMeq">TEC (meq)</label>
-            <input type="number" id="tecMeq" name="tecMeq" step="0.1" required>
-            <div class="validation-message">Please enter a valid TEC value</div>
-          </div>
-          <div class="form-group">
-            <label for="ph">pH</label>
-            <input type="number" id="ph" name="ph" step="0.1" min="0" max="14" required>
-            <div class="validation-message">Please enter a valid pH (0-14)</div>
-          </div>
-          <div class="form-group">
-            <label for="organicMatterPercent">Organic Matter (%)</label>
-            <input type="number" id="organicMatterPercent" name="organicMatterPercent" step="0.01" required>
-            <div class="validation-message">Please enter a valid Organic Matter percentage</div>
-          </div>
-        </div>
+<!-- 1) GENERAL INFORMATION -->
+<div class="form-section">
+  <h3>General Information</h3>
+  <div class="general-info-grid">
+    <div class="form-group">
+      <label for="soilName">Profile Name</label>
+      <input type="text" id="soilName" name="soilName" required>
+    </div>
+    <div class="form-group">
+      <label for="soilMedia">Soil Media</label>
+      <select id="soilMedia" name="soilMedia" required>
+        <option value="">Select soil media...</option>
+        <option value="peat_moss">Peat Moss</option>
+        <option value="coconut_coir">Coconut Coir</option>
+        <option value="natural_soil">Natural Soil</option>
+        <option value="compost">Compost</option>
+        <option value="seed_starting_mix">Seed Starting Mix</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<!-- 2) PRIMARY SOIL PARAMETERS -->
+<div class="form-section">
+  <h3>Primary Soil Parameters</h3>
+  <div class="form-grid">
+    <div class="form-group">
+      <label for="tecMeq">TEC (meq)</label>
+      <input type="number" id="tecMeq" name="tecMeq" step="0.1" required>
+      <div class="validation-message">Please enter a valid TEC value</div>
+    </div>
+    <div class="form-group">
+      <label for="ph">pH</label>
+      <input type="number" id="ph" name="ph" step="0.1" min="0" max="14" required>
+      <div class="validation-message">Please enter a valid pH (0-14)</div>
+    </div>
+    <div class="form-group">
+      <label for="organicMatterPercent">Organic Matter (%)</label>
+      <input type="number" id="organicMatterPercent" name="organicMatterPercent" step="0.01" required>
+      <div class="validation-message">Please enter a valid Organic Matter percentage</div>
+    </div>
+    <div class="form-group">
+      <label for="sampleDepth">Sample Depth (inches)</label>
+      <input type="number" id="sampleDepth" name="sampleDepth" required>
+      <div class="validation-message">Please enter a valid Sample Depth</div>
+    </div>
+  </div>
+</div>
+
+<!-- 3) NUTRIENT PARAMETERS -->
+<div class="form-section">
+  <h3>Nutrient Parameters (ppm)</h3>
+  <div class="form-grid">
+    <div class="form-group">
+      <label for="calcium">Calcium (Ca)</label>
+      <input type="number" id="calcium" name="calcium" required>
+    </div>
+    <div class="form-group">
+      <label for="magnesium">Magnesium (Mg)</label>
+      <input type="number" id="magnesium" name="magnesium" required>
+    </div>
+    <div class="form-group">
+      <label for="potassium">Potassium (K)</label>
+      <input type="number" id="potassium" name="potassium" required>
+    </div>
+    <div class="form-group">
+      <label for="sodium">Sodium (Na)</label>
+      <input type="number" id="sodium" name="sodium" required>
+    </div>
+    <div class="form-group">
+      <label for="phosphorus">Phosphorus (P)</label>
+      <input type="number" id="phosphorus" name="phosphorus" required>
+    </div>
+    <div class="form-group">
+      <label for="sulfur">Sulfur (S)</label>
+      <input type="number" id="sulfur" name="sulfur" required>
+    </div>
+  </div>
+</div>
+
+<!-- 4) MICRONUTRIENTS -->
+<div class="form-section">
+  <h3>Micronutrients (ppm)</h3>
+  <div class="form-grid">
+    <div class="form-group">
+      <label for="boron">Boron (B)</label>
+      <input type="number" id="boron" name="boron" required>
+    </div>
+    <div class="form-group">
+      <label for="iron">Iron (Fe)</label>
+      <input type="number" id="iron" name="iron" required>
+    </div>
+    <div class="form-group">
+      <label for="manganese">Manganese (Mn)</label>
+      <input type="number" id="manganese" name="manganese" required>
+    </div>
+    <div class="form-group">
+      <label for="copper">Copper (Cu)</label>
+      <input type="number" id="copper" name="copper" required>
+    </div>
+    <div class="form-group">
+      <label for="zinc">Zinc (Zn)</label>
+      <input type="number" id="zinc" name="zinc" required>
+    </div>
+    <div class="form-group">
+      <label for="aluminum">Aluminum (Al)</label>
+      <input type="number" id="aluminum" name="aluminum" required>
+    </div>
+  </div>
+</div>
+
+<!-- 5) ADDITIONAL PARAMETERS -->
+<div class="form-section">
+  <h3>Additional Parameters</h3>
+  <div class="form-grid">
+    <div class="form-group">
+      <label for="exchangeableHBaseSaturation">Exchangeable H Base Saturation</label>
+      <input type="number" id="exchangeableHBaseSaturation" name="exchangeableHBaseSaturation" step="0.1" required>
+    </div>
+    <div class="form-group additional-parameters-grid">
+      <label for="bulkDensity">Bulk Density (g/cm³)</label>
+      <input type="number" id="bulkDensity" name="bulkDensity" value="1.33" required>
+    </div>
+  </div>
+</div>
+
+      <!-- Buttons -->
+      <div class="buttons">
+        <button type="submit" class="btn btn-primary">Save Profile</button>
+        <button type="reset" class="btn btn-secondary">Reset</button>
       </div>
-      
-      <div class="form-section">
-        <h3>Nutrient Parameters (ppm)</h3>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="caPpm">Calcium (Ca)</label>
-            <input type="number" id="caPpm" name="caPpm" step="0.1" required>
-            <div class="validation-message">Please enter a valid Ca value</div>
-          </div>
-          <div class="form-group">
-            <label for="mgPpm">Magnesium (Mg)</label>
-            <input type="number" id="mgPpm" name="mgPpm" step="0.1" required>
-            <div class="validation-message">Please enter a valid Mg value</div>
-          </div>
-          <div class="form-group">
-            <label for="kPpm">Potassium (K)</label>
-            <input type="number" id="kPpm" name="kPpm" step="0.1" required>
-            <div class="validation-message">Please enter a valid K value</div>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="naPpm">Sodium (Na)</label>
-            <input type="number" id="naPpm" name="naPpm" step="0.1" required>
-            <div class="validation-message">Please enter a valid Na value</div>
-          </div>
-          <div class="form-group">
-            <label for="pPpm">Phosphorus (P)</label>
-            <input type="number" id="pPpm" name="pPpm" step="0.01" required>
-            <div class="validation-message">Please enter a valid P value</div>
-          </div>
-          <div class="form-group">
-            <label for="sPpm">Sulfur (S)</label>
-            <input type="number" id="sPpm" name="sPpm" step="0.1" required>
-            <div class="validation-message">Please enter a valid S value</div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="form-section">
-        <h3>Micronutrients (ppm)</h3>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="bPpm">Boron (B)</label>
-            <input type="number" id="bPpm" name="bPpm" step="0.01" required>
-            <div class="validation-message">Please enter a valid B value</div>
-          </div>
-          <div class="form-group">
-            <label for="fePpm">Iron (Fe)</label>
-            <input type="number" id="fePpm" name="fePpm" step="0.1" required>
-            <div class="validation-message">Please enter a valid Fe value</div>
-          </div>
-          <div class="form-group">
-            <label for="mnPpm">Manganese (Mn)</label>
-            <input type="number" id="mnPpm" name="mnPpm" step="0.1" required>
-            <div class="validation-message">Please enter a valid Mn value</div>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="cuPpm">Copper (Cu)</label>
-            <input type="number" id="cuPpm" name="cuPpm" step="0.01" required>
-            <div class="validation-message">Please enter a valid Cu value</div>
-          </div>
-          <div class="form-group">
-            <label for="znPpm">Zinc (Zn)</label>
-            <input type="number" id="znPpm" name="znPpm" step="0.1" required>
-            <div class="validation-message">Please enter a valid Zn value</div>
-          </div>
-          <div class="form-group">
-            <label for="alPpm">Aluminum (Al)</label>
-            <input type="number" id="alPpm" name="alPpm" step="0.1" required>
-            <div class="validation-message">Please enter a valid Al value</div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="form-section">
-        <h3>Additional Parameters</h3>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="exchangeableHBaseSaturation">Exchangeable H Base Saturation</label>
-            <input type="number" id="exchangeableHBaseSaturation" name="exchangeableHBaseSaturation" step="0.1" required>
-            <div class="validation-message">Please enter a valid value</div>
-          </div>
-          <div class="form-group">
+    </form>
+  </div>
+</body>
+</html>
