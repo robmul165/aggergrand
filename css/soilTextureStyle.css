@@ -28,7 +28,7 @@
   /* === Form Layout === */
   .form-group.compact {
     display: grid;
-    grid-template-columns: 300px 100px 70px;
+    grid-template-columns: auto 100px 70px;
     align-items: center;
     justify-items: center;     /* center content in cells */
     justify-content: center;   /* center the whole grid block */
@@ -40,8 +40,8 @@
     font-weight: 700;
     font-size: 1.2rem;
     color: #1b5e20;
-    text-align: center;
-    width: 100%;
+    text-align: right;
+    width: 50px;
     padding-right: 10px;
   }
   
