@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soil Texture Calculator</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/soilTextureStyle.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Top Bar Navigation -->
+  <div class="topbar">
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="images/logo.jpg" alt="Agger Grand Logo" class="logo">
+      </a>
+    </div>
+    <nav>
+      <a href="soilDatabase.html" class="header">Soil Database</a>
+      <a href="soilTesting.html" class="header">Soil Testing</a>
+      <a href="blog.html" class="header">Blog</a>
+      <a href="aboutUs.html" class="header">About Us</a>
+    </nav>
+  </div>
+
+  <main class="content">
+    <h1>🌱 Soil Texture Calculator</h1>
+  
+    <form id="textureForm">
+      <!-- Sand Layer -->
+      <div class="form-group compact">
+        <label for="sandHeight">Sand</label>
+        <input type="number" id="sandHeight" name="sandHeight" required />
+        <select id="sandUnit" name="sandUnit" title="Sand Unit">
+          <option value="%">%</option>
+          <option value="in">in</option>
+          <option value="cm">cm</option>
+          <option value="mm">mm</option>
+        </select>
+      </div>
+      
+      <!-- Silt Layer -->
+      <div class="form-group compact">
+        <label for="siltHeight">Silt</label>
+        <input type="number" id="siltHeight" name="siltHeight" required />
+        <select id="siltUnit" name="siltUnit" title="Silt Unit">
+          <option value="%">%</option>
+          <option value="in">in</option>
+          <option value="cm">cm</option>
+          <option value="mm">mm</option>
+        </select>
+      </div>
+      
+      <!-- Clay Layer -->
+      <div class="form-group compact">
+        <label for="clayHeight">Clay</label>
+        <input type="number" id="clayHeight" name="clayHeight" required />
+        <select id="clayUnit" name="clayUnit" title="Clay Unit">
+          <option value="%">%</option>
+          <option value="in">in</option>
+          <option value="cm">cm</option>
+          <option value="mm">mm</option>
+        </select>
+      </div>
+      
+      <div class="form-actions center-buttons">
+        <button id="calculateBtn" type="button">Calculate Texture</button>
+        <button type="reset">Reset</button>
+      </div>
+  
+      <div id="result" class="result-output hidden">
+        <div id="errorMsg" class="result-error hidden"></div>
+        <div class="result-line"><span class="label">Sand:</span> <span id="sandPercent"></span></div>
+        <div class="result-line"><span class="label">Silt:</span> <span id="siltPercent"></span></div>
+        <div class="result-line"><span class="label">Clay:</span> <span id="clayPercent"></span></div>
+        <div class="result-line texture"><span class="label">Soil Texture:</span> <span id="soilTexture"></span></div>
+      </div>
+    </form>
+  </main>
+  <div class="content">
+    <h2>
+      Explanation
+    </h2>
+    <p>
+      This calculator determines your soil texture based on the relative proportions of sand, silt, and clay after sedimentation. 
+      You can do this yourself with the Mason Jar Test. It doesn’t require a specific jar size or measurement unit — 
+      just input the settled layer heights or a desired ratio, and the tool will calculate the percentages and classify your soil using the USDA texture triangle.
+    </p>
+  </div>
+
+      <footer>
+        <p>&copy; 2025 Agger Grand. All rights reserved.</p>
+      </footer>
+    
+      <script src="script/textureScript.js"></script>
+    </body>
+    </html>
