@@ -69,12 +69,18 @@ body {
   text-align: center;
   color: #000000;
 } 
-.content h2, 
+.content h2 {
+  margin-bottom: 15px;
+  color: #278037;
+  text-align: center; /* center only h2 */
+}
+
 .content h3 {
   margin-bottom: 15px;
   color: #278037;
   text-align: left;
 }
+
 /* Adjust General Information to use only 2 columns */
 .general-info-grid {
   display: grid;
@@ -266,4 +272,57 @@ input[type="number"] {
   .btn {
     width: 100%;
   }
+}
+
+#resultsContainer {
+  background-color: #fefefe;
+  border: 1px solid #d3e3d3;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center !important;
+}
+
+#resultsContainer h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #278037;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#results {
+  white-space: pre-line;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #444;
+  text-align: left;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 6px;
+  margin-top: 1rem;
+  border: 1px solid #eee;
+}
+
+#microBar {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.gauge-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 2rem;
+}
+
+.gauge-box {
+  width: 300px;
+  height: 250px;
 }

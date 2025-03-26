@@ -6,6 +6,8 @@
   <title>AG Model Input Form - Agger Grand</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/inputStyle.css">
+    <!-- 1) Include Plotly for charts -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
   <!-- Top Bar Navigation -->
@@ -196,13 +198,38 @@
   </div>
 </div>
 
+
       <!-- Buttons -->
-      <div class="buttons">
-        <button type="submit" class="btn btn-primary">Save Profile</button>
-        <button type="submit" class="btn btn-primary">Get Recommendations</button>
+        <button type="button" class="btn btn-primary" onclick="runAGModel()">
+          Get Recommendations
+        </button>
         <button type="reset" class="btn btn-secondary">Reset</button>
       </div>
     </form>
   </div>
+
+  <!-- A container where results and charts will appear -->
+  <div id="resultsContainer" class="content">
+    <h2 id="resultsContainer">Recommendations &amp; Analysis</h2>
+  
+    <!-- The JS will place textual results here -->
+    <div id="results"></div>
+  
+    <!-- Micronutrient bar chart -->
+    <div id="microBar"></div>
+  
+    <!-- Gauge charts for Ca, Mg, K, Na, P, S -->
+    <div class="gauge-grid">
+      <div id="caGauge"></div>
+      <div id="mgGauge"></div>
+      <div id="kGauge"></div>
+      <div id="naGauge"></div>
+      <div id="pGauge"></div>
+      <div id="sGauge"></div>
+    </div>
+  </div>
+
+  <!-- 2) Include your custom JS after Plotly -->
+  <script src="script/nutrientScript.js"></script>
 </body>
 </html>
