@@ -470,3 +470,29 @@ footer {
 .button:hover {
   background-color: #1c5a28;
 }
+
+/* ───────────────── Compost table ───────────────── */
+#compostTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+#compostTable th,
+#compostTable td {
+  border: 1px solid #bbb;
+  padding: 0.5rem;
+}
+
+#compostTable th {
+  background: #f2f2f2;
+  cursor: pointer;
+}
+
+/* Row colours set by JS           (className = item.category.toLowerCase()) */
+tr.green  { background: #e7f9e7; }
+tr.brown  { background: #fff7e6; }
+
+/* ▲ ▼ arrows that appear when you click a column header */
+#compostTable th.asc::after  { content: " ▲"; }
+#compostTable th.desc::after { content: " ▼"; }

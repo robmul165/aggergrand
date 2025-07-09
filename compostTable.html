@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soil Texture Calculator</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Top Bar Navigation -->
+  <div class="topbar">
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="images/logo.jpg" alt="Agger Grand Logo" class="logo">
+      </a>
+    </div>
+    <nav>
+      <a href="digitalTools.html" class="header">Digital Tools</a>
+      <a href="soilTesting.html" class="header">Soil Testing</a>
+      <a href="blog.html" class="header">Blog</a>
+      <a href="aboutUs.html" class="header">About Us</a>
+    </nav>
+  </div>
+
+
+
+  <!-- inside <body> after your nav -->
+<h1>Compostable Materials</h1>
+
+<table id="compostTable">
+  <thead>
+    <tr>
+      <th>Material</th>
+      <th>Category</th>
+      <th>C:N</th>
+      <th>Decomposition</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<!-- other page content … -->
+
+<!-- keep this as the LAST tag before </body> -->
+<script type="module" src="script/compostScript.js"></script>
+          <!-- Footer -->
+  <footer>
+    &copy; <span id="year"></span> Agger Grand. All rights reserved.
+  </footer>
+
+  <script>
+    // Set the current year in the footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+    </body>
+    </html>

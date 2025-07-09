@@ -1,0 +1,1132 @@
+[
+
+  {
+    "name": "Dry leaves",
+    "category": "Brown",
+    "cn_ratio": "~60:1",
+    "decomposition": "Moderate (6 to 12 months)",
+    "notes": "Shred for faster breakdown"
+  },
+  
+  {
+    "name": "Straw",
+    "category": "Brown",
+    "cn_ratio": "~",
+    "decomposition": "Moderate (6 to 12 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+  {
+    "name": "Cardboard",
+    "category": "Brown",
+    "cn_ratio": "~",
+    "decomposition": "Moderate (6 to 12 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+        {
+    "name": "Cardboard",
+    "category": "Brown",
+    "cn_ratio": "~",
+    "decomposition": "Moderate (6 to 12 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+        {
+    "name": "Wood Ashes",
+    "category": "Brown",
+    "cn_ratio": "~",
+    "decomposition": "Moderate (6 to 12 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+        {
+    "name": "Pine Cones",
+    "category": "Brown",
+    "cn_ratio": "~",
+    "decomposition": "Moderate (6 to 12 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+        {
+    "name": "Rope",
+    "category": "Brown",
+    "cn_ratio": "~",
+    "decomposition": "Moderate (6 to 12 months)",
+    "notes": "Shred for faster breakdown and organic"
+  },
+
+        {
+    "name": "Toothpicks",
+    "category": "Brown",
+    "cn_ratio": "~",
+    "decomposition": "Moderate (6 to 12 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+        {
+    "name": "Wood Skewer",
+    "category": "Brown",
+    "cn_ratio": "~",
+    "decomposition": "Moderate (6 to 12 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+        {
+    "name": "Paper Towels",
+    "category": "Brown",
+    "cn_ratio": "~",
+    "decomposition": "Moderate (6 to 12 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+        {
+    "name": "Napkins",
+    "category": "Brown",
+    "cn_ratio": "~",
+    "decomposition": "Moderate (6 to 12 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+        {
+    "name": "Toliet Paper",
+    "category": "Brown",
+    "cn_ratio": "~",
+    "decomposition": "Moderate (6 to 12 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+        {
+    "name": "Paper Towel Rolls",
+    "category": "Brown",
+    "cn_ratio": "~",
+    "decomposition": "Moderate (6 to 12 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+        {
+    "name": "Newspaper",
+    "category": "Brown",
+    "cn_ratio": "~",
+    "decomposition": "Moderate (6 to 12 months)",
+    "notes": "Shred for faster breakdown, black and white"
+  },
+
+        {
+    "name": "Office Paper",
+    "category": "Brown",
+    "cn_ratio": "~",
+    "decomposition": "Moderate (6 to 12 months)",
+    "notes": "Shred for faster breakdown, no plastic"
+  },
+
+        {
+    "name": "Egg Cartons",
+    "category": "Brown",
+    "cn_ratio": "~",
+    "decomposition": "Moderate (6 to 12 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+        {
+    "name": "Brown Paper Bags",
+    "category": "Brown",
+    "cn_ratio": "~",
+    "decomposition": "Moderate (6 to 12 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+        {
+    "name": "Sawdust",
+    "category": "Brown",
+    "cn_ratio": "~",
+    "decomposition": "Moderate (6 to 12 months)",
+    "notes": "Untreated"
+  },
+
+        {
+    "name": "Chopsticks",
+    "category": "Brown",
+    "cn_ratio": "~",
+    "decomposition": "Moderate (6 to 12 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+        {
+    "name": "Pencil Shavings",
+    "category": "Brown",
+    "cn_ratio": "~",
+    "decomposition": "Moderate (6 to 12 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+        {
+    "name": "Wine Corks",
+    "category": "Brown",
+    "cn_ratio": "~",
+    "decomposition": "Moderate (6 to 12 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+        {
+    "name": "Sticks",
+    "category": "Brown",
+    "cn_ratio": "~",
+    "decomposition": "Moderate (6 to 12 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+        {
+    "name": "Dryer Lint",
+    "category": "Brown",
+    "cn_ratio": "~",
+    "decomposition": "Moderate (6 to 12 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+        {
+    "name": "Pine Needles",
+    "category": "Brown",
+    "cn_ratio": "~",
+    "decomposition": "Moderate (6 to 12 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+        {
+    "name": "Hay",
+    "category": "Brown",
+    "cn_ratio": "~",
+    "decomposition": "Moderate (6 to 12 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "name": "Grass clippings",
+    "category": "Green",
+    "cn_ratio": "~20:1",
+    "decomposition": "Fast (1 to 3 months)",
+    "notes": "Mix with dry browns to stop matting"
+  },
+
+  {
+    "name": "Apple",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+   {
+    "name": "Bananna Peel",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+  
+     {
+    "name": "Citrus Peels",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+     {
+    "name": "Strawberry",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+       {
+    "name": "Blueberry",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+         {
+    "name": "Grape",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+           {
+    "name": "Carrot",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+           {
+    "name": "Onion",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+           {
+    "name": "Garlic",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+           {
+    "name": "Leek",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+           {
+    "name": "Corn",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+  
+           {
+    "name": "Pumpkin",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+           {
+    "name": "Gourd",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+           {
+    "name": "Avacado",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+           {
+    "name": "Coffee Grinds",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+           {
+    "name": "Tomato",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+           {
+    "name": "Tea Leaves",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Non Plastic Bags"
+  },
+
+           {
+    "name": "Bread",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+           {
+    "name": "Potato",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+           {
+    "name": "Chicken Manure",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+           {
+    "name": "Horse Manure",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+           {
+    "name": "Manure",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+           {
+    "name": "Rice",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+           {
+    "name": "Pasta",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+             {
+    "name": "Cereal",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Non Sugary"
+  },
+
+             {
+    "name": "Oatmeal",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Non Oily"
+  },
+
+             {
+    "name": "Beans",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+           {
+    "name": "Lentils",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+             {
+    "name": "Chickpeas",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+             {
+    "name": "Soy",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+             {
+    "name": "Edamame",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "high protein is extra nitrogen, but need more browns to cover odor"
+  },
+
+             {
+    "name": "Tortilla",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred up for faster breakdown"
+  },
+
+           {
+    "name": "Lettuce",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+             {
+    "name": "Spinach",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+             {
+    "name": "Kale",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+             {
+    "name": "Mirco-greens",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+             {
+    "name": "Eggshells",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "adds more calcium"
+  },
+
+               {
+    "name": "Fruit Pulp",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+               {
+    "name": "Flour",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+               {
+    "name": "Tofu",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+               {
+    "name": "Protein Powder",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+               {
+    "name": "Cracker",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+               {
+    "name": "Popcorn",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+               {
+    "name": "Quinoa",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+               {
+    "name": "Granola Bars",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+               {
+    "name": "Seaweed",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Nuts",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Unseasoned"
+  },
+
+                 {
+    "name": "Seeds",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Kombucha scobies",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Paper Filters",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Dead Plants",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Algae",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Hair",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Nail Clippings",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Plant Based Milk",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Pears",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Orange",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Lemon",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Lime",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Grapefruit",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Tangerine",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Peach",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Nectarine",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Plum",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Apricot",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Cherry",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Raspberry",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Blackberry",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Watermelon",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Honeydew",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Kiwi",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Pineapple",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Mango",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Papaya",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Persimmon",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Fig",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Date",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Sweet Potato",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Radish",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Beet",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Eggplant",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+               {
+    "name": "Broccoli",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Celery",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Zucchini",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Chard",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Brussels",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Cabbage",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Shallot",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Cauliflower",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Scallion",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Parsley",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Cliantro",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Mint",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Dill",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Soda",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Small Amounts"
+  },
+
+                 {
+    "name": "Beer",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Small Amounts"
+  },
+
+                 {
+    "name": "Wine",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Small Amounts"
+  },
+
+                 {
+    "name": "Noodles",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Barley",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Cornmeal",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Okara",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Jelly",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Tomato Sauce",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Salsa",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Agave",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Maple Syrup",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Spices",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Crab Shells",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown and cleaned"
+  },
+
+                 {
+    "name": "Lobster Shells",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown and cleaned"
+  },
+
+                 {
+    "name": "Shrimp Shells",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown and cleaned"
+  },
+
+                 {
+    "name": "Cucumber",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  },
+
+                 {
+    "name": "Pickle",
+    "category": "Green",
+    "cn_ratio": "~",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown"
+  }
+
+
+]
