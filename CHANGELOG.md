@@ -1,5 +1,5 @@
 # CHANGELOG
-2/16/2026 2:10pm lunarsouls added CHANGELOG.md and also added SonarQube for further code analysis. 
+2/16/2026 2:10pm lunarsouls added CHANGELOG.md for project change tracking. 
 
 2/19/2026 3:38pm lunarsouls created vs workspace save for local editing and retention of extensions and settings in vscode. Checking for any python extensions/ vs code updates none as of now.
 
@@ -47,3 +47,5 @@ css/style.css
 +  color: #333;
 +}
 ```
+
+2/24/2026 5:44pm lunarsouls updated homepage SEO items across the main page: improved title and H1 keyword targeting, added meta description, canonical tag, Open Graph metadata, structured data, image dimension/format optimization, and expanded on-page copy. Twitter Card metadata was intentionally not added because there is no active Twitter/X usage at this time.
