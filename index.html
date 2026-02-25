@@ -3,48 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agger Grand</title>
+  <meta name="description" content="Use Agger Grand for soil testing, soil data, nutrient analysis, and practical guidance to grow healthier plants from the ground up.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aggergrand.com/">
+  <meta property="og:title" content="Soil Testing & Soil Data Science | Agger Grand">
+  <meta property="og:description" content="Use Agger Grand for soil testing, soil data, nutrient analysis, and practical guidance to grow healthier plants from the ground up.">
+  <meta property="og:image" content="https://aggergrand.com/images/og-home.jpg">
+  <title>Soil Testing and Soil Data Science | Agger Grand</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Organization","name":"Agger Grand","url":"https://aggergrand.com/","logo":"https://aggergrand.com/images/logo_index.png"}
+  </script>
 </head>
 <body>
-
-  <!-- Calculator-Styled Header -->
-  <header class="calculator-container">
-    <img src="images/logo_index.png" alt="Agger Grand Logo" class="logo">
-  </header>
-
-  <!-- Main Grid Layout (Navigation Links) -->
-  <div class="grid-container">
-    <a href="digitalTools.html" class="grid-item">Digital Tools</a>
-    <a href="soilTesting.html" class="grid-item">Soil Testing</a>
-    <a href="blog.html" class="grid-item">Blog</a>
-    <a href="aboutUs.html" class="grid-item">About Us</a>
+  <div class="bg-stack">
+    <div class="bg-layer bg-sky"></div>
+    <div class="bg-layer bg-garden"></div>
+    <div class="bg-layer bg-underground"></div>
   </div>
 
-<!-- Mission Statement -->
-<div class="content mission-section">
-  <h1>🌱 Our Mission</h1>
-  <p class="mission-highlight">Our mission is to be your digital growing assistant.</p>
-  <p>We believe healthy plants start with healthy soil. That is why we are developing a soil database to provide real-time insights into nutrient composition, soil quality, and sustainable growing practices.</p>
- 
-  <div class="cta-box">
-      <p><strong>📩 Contact us anytime for a FREE consultation:</strong></p>
-      <p><a href="mailto:aggergrand@gmail.com">info@aggergrand.com</a></p>
+  <div class="page-content">
+    <!-- Calculator-Styled Header -->
+    <header class="calculator-container">
+      <img src="images/logo_index.png" alt="Agger Grand Logo" class="logo">
+    </header>
+
+    <main>
+      <h1 class="visually-hidden">Soil Testing and Soil Data Science</h1>
+
+      <!-- Main Grid Layout (Navigation Links) -->
+      <nav class="grid-container" aria-label="Primary site navigation">
+        <a href="digitalTools.html" class="grid-item with-image">
+          <img src="images/math.jpg" alt="Digital tools" class="grid-item-image">
+          <span class="grid-item-label">Digital Tools</span>
+        </a>
+
+        <a href="soilTesting.html" class="grid-item with-image">
+          <img src="images/SoilTesting.jpg" alt="Soil Testing" class="grid-item-image">
+          <span class="grid-item-label">Soil Testing</span>
+        </a>
+
+        <a href="blog.html" class="grid-item with-image">
+          <img src="images/amendments.jpg" alt="Blog" class="grid-item-image">
+          <span class="grid-item-label">Blog</span>
+        </a>
+
+        <a href="aboutUs.html" class="grid-item with-image">
+          <img src="images/HandSoil.jpg" alt="About Us" class="grid-item-image">
+          <span class="grid-item-label">About Us</span>
+        </a>
+      </nav>
+
+      <!-- Mission Statement -->
+      <section class="content mission-section">
+        <h2>Agger Grand Mission Statement</h2>
+        <p class="mission-highlight">Our mission is to be your digital growing assistant.</p>
+        <p>We believe healthy plants start with healthy soil. That is why we are developing a soil database to provide real-time insights into nutrient composition, soil quality, and sustainable growing practices.</p>
+
+        <div class="cta-box">
+          <p><strong>Contact Agger Grand anytime for a FREE consultation and estimate:</strong></p>
+          <p><a href="mailto:aggergrand@gmail.com">info@aggergrand.com</a></p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      &copy; <span id="year"></span> Agger Grand. All rights reserved.
+    </footer>
   </div>
-</div>
-
-
-
-  <!-- Footer -->
-  <footer>
-    &copy; <span id="year"></span> Agger Grand. All rights reserved.
-  </footer>
 
   <script>
     // Set the current year in the footer
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 
+  <script>
+    const sky = document.querySelector('.bg-sky');
+    const garden = document.querySelector('.bg-garden');
+    const underground = document.querySelector('.bg-underground');
+
+    function updateBackgrounds() {
+      const maxScroll = document.body.scrollHeight - window.innerHeight;
+      const progress = maxScroll > 0 ? window.scrollY / maxScroll : 0;
+
+      if (progress < 0.5) {
+        const t = progress / 0.5;
+        sky.style.opacity = (1 - t).toFixed(3);
+        garden.style.opacity = t.toFixed(3);
+        underground.style.opacity = 0;
+      } else {
+        const t = (progress - 0.5) / 0.5;
+        sky.style.opacity = 0;
+        garden.style.opacity = (1 - t).toFixed(3);
+        underground.style.opacity = t.toFixed(3);
+      }
+    }
+
+    window.addEventListener('scroll', updateBackgrounds);
+    window.addEventListener('resize', updateBackgrounds);
+    updateBackgrounds();
+  </script>
 </body>
 </html>
