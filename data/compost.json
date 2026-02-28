@@ -1,1132 +1,2862 @@
 [
-
   {
     "name": "Dry leaves",
     "category": "Brown",
     "cn_ratio": "~60:1",
     "decomposition": "Moderate (6 to 12 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-  
   {
     "name": "Straw",
     "category": "Brown",
-    "cn_ratio": "~",
+    "cn_ratio": "127:1",
     "decomposition": "Moderate (6 to 12 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": ".6",
+    "moistureContent%": "12",
+    "bulkDensity": "227",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
   {
     "name": "Cardboard",
     "category": "Brown",
     "cn_ratio": "~",
     "decomposition": "Moderate (6 to 12 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-        {
+  {
     "name": "Cardboard",
     "category": "Brown",
     "cn_ratio": "~",
     "decomposition": "Moderate (6 to 12 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-        {
+  {
     "name": "Wood Ashes",
     "category": "Brown",
     "cn_ratio": "~",
     "decomposition": "Moderate (6 to 12 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-        {
+  {
     "name": "Pine Cones",
     "category": "Brown",
     "cn_ratio": "~",
     "decomposition": "Moderate (6 to 12 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-        {
+  {
     "name": "Rope",
     "category": "Brown",
     "cn_ratio": "~",
     "decomposition": "Moderate (6 to 12 months)",
-    "notes": "Shred for faster breakdown and organic"
+    "notes": "Shred for faster breakdown and organic",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-        {
+  {
     "name": "Toothpicks",
     "category": "Brown",
     "cn_ratio": "~",
     "decomposition": "Moderate (6 to 12 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-        {
+  {
     "name": "Wood Skewer",
     "category": "Brown",
     "cn_ratio": "~",
     "decomposition": "Moderate (6 to 12 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-        {
+  {
     "name": "Paper Towels",
     "category": "Brown",
     "cn_ratio": "~",
     "decomposition": "Moderate (6 to 12 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-        {
+  {
     "name": "Napkins",
     "category": "Brown",
     "cn_ratio": "~",
     "decomposition": "Moderate (6 to 12 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-        {
+  {
     "name": "Toliet Paper",
     "category": "Brown",
     "cn_ratio": "~",
     "decomposition": "Moderate (6 to 12 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-        {
+  {
     "name": "Paper Towel Rolls",
     "category": "Brown",
     "cn_ratio": "~",
     "decomposition": "Moderate (6 to 12 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-        {
+  {
     "name": "Newspaper",
     "category": "Brown",
     "cn_ratio": "~",
     "decomposition": "Moderate (6 to 12 months)",
-    "notes": "Shred for faster breakdown, black and white"
+    "notes": "Shred for faster breakdown, black and white",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-        {
+  {
     "name": "Office Paper",
     "category": "Brown",
     "cn_ratio": "~",
     "decomposition": "Moderate (6 to 12 months)",
-    "notes": "Shred for faster breakdown, no plastic"
+    "notes": "Shred for faster breakdown, no plastic",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-        {
+  {
     "name": "Egg Cartons",
     "category": "Brown",
     "cn_ratio": "~",
     "decomposition": "Moderate (6 to 12 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-        {
+  {
     "name": "Brown Paper Bags",
     "category": "Brown",
     "cn_ratio": "~",
     "decomposition": "Moderate (6 to 12 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-        {
+  {
     "name": "Sawdust",
     "category": "Brown",
     "cn_ratio": "~",
     "decomposition": "Moderate (6 to 12 months)",
-    "notes": "Untreated"
+    "notes": "Untreated",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-        {
+  {
     "name": "Chopsticks",
     "category": "Brown",
     "cn_ratio": "~",
     "decomposition": "Moderate (6 to 12 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-        {
+  {
     "name": "Pencil Shavings",
     "category": "Brown",
     "cn_ratio": "~",
     "decomposition": "Moderate (6 to 12 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-        {
+  {
     "name": "Wine Corks",
     "category": "Brown",
     "cn_ratio": "~",
     "decomposition": "Moderate (6 to 12 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-        {
+  {
     "name": "Sticks",
     "category": "Brown",
     "cn_ratio": "~",
     "decomposition": "Moderate (6 to 12 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-        {
+  {
     "name": "Dryer Lint",
     "category": "Brown",
     "cn_ratio": "~",
     "decomposition": "Moderate (6 to 12 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-        {
+  {
     "name": "Pine Needles",
     "category": "Brown",
     "cn_ratio": "~",
     "decomposition": "Moderate (6 to 12 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-        {
+  {
     "name": "Hay",
     "category": "Brown",
-    "cn_ratio": "~",
+    "cn_ratio": "18",
     "decomposition": "Moderate (6 to 12 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "3.6",
+    "moistureContent%": "9",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   {
     "name": "Grass clippings",
     "category": "Green",
     "cn_ratio": "~20:1",
     "decomposition": "Fast (1 to 3 months)",
-    "notes": "Mix with dry browns to stop matting"
+    "notes": "Mix with dry browns to stop matting",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
   {
     "name": "Apple",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-   {
+  {
     "name": "Bananna Peel",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-  
-     {
+  {
     "name": "Citrus Peels",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-     {
+  {
     "name": "Strawberry",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-       {
+  {
     "name": "Blueberry",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-         {
+  {
     "name": "Grape",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-           {
+  {
     "name": "Carrot",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-           {
+  {
     "name": "Onion",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-           {
+  {
     "name": "Garlic",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-           {
+  {
     "name": "Leek",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-           {
+  {
     "name": "Corn",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-  
-           {
+  {
+    "name": "Corn Cobs",
+    "category": "Green",
+    "cn_ratio": "98:1",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown",
+    "N%": ".6",
+    "moistureContent%": "15",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
+  },
+  {
+    "name": "Corn Stalk",
+    "category": "Green",
+    "cn_ratio": "66:1",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown",
+    "N%": ".7",
+    "moistureContent%": "12",
+    "bulkDensity": "32",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
+  },
+  {
+    "name": "Cottonseed Meal",
+    "category": "Green",
+    "cn_ratio": "7:1",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown",
+    "N%": "7.7",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
+  },
+  {
     "name": "Pumpkin",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-           {
+  {
     "name": "Gourd",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-           {
+  {
     "name": "Avacado",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-           {
+  {
     "name": "Coffee Grinds",
     "category": "Green",
-    "cn_ratio": "~",
+    "cn_ratio": "20:1",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-           {
+  {
+    "name": "Cocoa Shells",
+    "category": "Green",
+    "cn_ratio": "22:1",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown",
+    "N%": "2.3",
+    "moistureContent%": "8",
+    "bulkDensity": "798",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
+  },
+  {
     "name": "Tomato",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-           {
+  {
     "name": "Tea Leaves",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Non Plastic Bags"
+    "notes": "Non Plastic Bags",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-           {
+  {
     "name": "Bread",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-           {
+  {
     "name": "Potato",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-           {
+  {
     "name": "Chicken Manure",
     "category": "Green",
-    "cn_ratio": "~",
+    "cn_ratio": "6:1",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "8",
+    "moistureContent%": "69",
+    "bulkDensity": "1479",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-           {
+  {
     "name": "Horse Manure",
     "category": "Green",
-    "cn_ratio": "~",
+    "cn_ratio": "30:1",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "1.6",
+    "moistureContent%": "72",
+    "bulkDensity": "1379",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-           {
-    "name": "Manure",
+  {
+    "name": "Cow Manure",
     "category": "Green",
-    "cn_ratio": "~",
+    "cn_ratio": "19:1",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "2.4",
+    "moistureContent%": "81",
+    "bulkDensity": "1458",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-           {
+  {
     "name": "Rice",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-           {
+  {
+    "name": "Cranberry (stems and leaves)",
+    "category": "Green",
+    "cn_ratio": "61:1",
+    "decomposition": "Fast (1 to 2 months)",
+    "notes": "Shred for faster breakdown",
+    "N%": ".09",
+    "moistureContent%": "61",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
+  },
+  {
     "name": "Pasta",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-             {
+  {
     "name": "Cereal",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Non Sugary"
+    "notes": "Non Sugary",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-             {
+  {
     "name": "Oatmeal",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Non Oily"
+    "notes": "Non Oily",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-             {
+  {
     "name": "Beans",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-           {
+  {
     "name": "Lentils",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-             {
+  {
     "name": "Chickpeas",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-             {
+  {
     "name": "Soy",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-             {
+  {
     "name": "Edamame",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "high protein is extra nitrogen, but need more browns to cover odor"
+    "notes": "high protein is extra nitrogen, but need more browns to cover odor",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-             {
+  {
     "name": "Tortilla",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred up for faster breakdown"
+    "notes": "Shred up for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-           {
+  {
     "name": "Lettuce",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-             {
+  {
     "name": "Spinach",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-             {
+  {
     "name": "Kale",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-             {
+  {
     "name": "Mirco-greens",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-             {
+  {
     "name": "Eggshells",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "adds more calcium"
+    "notes": "adds more calcium",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-               {
+  {
     "name": "Fruit Pulp",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-               {
+  {
     "name": "Flour",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-               {
+  {
     "name": "Tofu",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-               {
+  {
     "name": "Protein Powder",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-               {
+  {
     "name": "Cracker",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-               {
+  {
     "name": "Popcorn",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-               {
+  {
     "name": "Quinoa",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-               {
+  {
     "name": "Granola Bars",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-               {
+  {
     "name": "Seaweed",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Nuts",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Unseasoned"
+    "notes": "Unseasoned",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Seeds",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Kombucha scobies",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Paper Filters",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Dead Plants",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Algae",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Hair",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Nail Clippings",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Plant Based Milk",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Pears",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Orange",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Lemon",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Lime",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Grapefruit",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Tangerine",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Peach",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Nectarine",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Plum",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Apricot",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Cherry",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Raspberry",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Blackberry",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Watermelon",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Honeydew",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Kiwi",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Pineapple",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Mango",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Papaya",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Persimmon",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Fig",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Date",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Sweet Potato",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Radish",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Beet",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Eggplant",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-               {
+  {
     "name": "Broccoli",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Celery",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Zucchini",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Chard",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Brussels",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Cabbage",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Shallot",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Cauliflower",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Scallion",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Parsley",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Cliantro",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Mint",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Dill",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Soda",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Small Amounts"
+    "notes": "Small Amounts",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Beer",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Small Amounts"
+    "notes": "Small Amounts",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Wine",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Small Amounts"
+    "notes": "Small Amounts",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Noodles",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Barley",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Cornmeal",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Okara",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Jelly",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Tomato Sauce",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Salsa",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Agave",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Maple Syrup",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Spices",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Crab Shells",
     "category": "Green",
-    "cn_ratio": "~",
+    "cn_ratio": "4.9",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown and cleaned"
+    "notes": "Shred for faster breakdown and cleaned",
+    "N%": "6.1",
+    "moistureContent%": "47",
+    "bulkDensity": "240",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Lobster Shells",
     "category": "Green",
-    "cn_ratio": "~",
+    "cn_ratio": "4.9",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown and cleaned"
+    "notes": "Shred for faster breakdown and cleaned",
+    "N%": "6.1",
+    "moistureContent%": "47",
+    "bulkDensity": "240",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Shrimp Shells",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown and cleaned"
+    "notes": "Shred for faster breakdown and cleaned",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Cucumber",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   },
-
-                 {
+  {
     "name": "Pickle",
     "category": "Green",
     "cn_ratio": "~",
     "decomposition": "Fast (1 to 2 months)",
-    "notes": "Shred for faster breakdown"
+    "notes": "Shred for faster breakdown",
+    "N%": "",
+    "moistureContent%": "",
+    "bulkDensity": "",
+    "lignin%": "",
+    "cellulose%": "",
+    "hemicellulose%": "",
+    "ash%": "",
+    "particleSize": "",
+    "waterHoldingCapacity": "",
+    "airFlowRating": "",
+    "pH": "",
+    "compostClass": "",
+    "pathogenRisk": ""
   }
-
-
 ]
