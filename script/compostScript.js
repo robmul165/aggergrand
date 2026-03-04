@@ -6,6 +6,7 @@ const calcState = [
     { name: "", weight: 0, moisture: 0, nitrogen: 0, carbon: 0 },
     { name: "", weight: 0, moisture: 0, nitrogen: 0, carbon: 0 }
 ];
+let compostData = [];
 
 document.addEventListener("DOMContentLoaded", () => {
   // Initialize Calculator Rows
@@ -14,12 +15,30 @@ document.addEventListener("DOMContentLoaded", () => {
   // Attach Event Listeners for Calculator
   document.getElementById("calculateBtn").addEventListener("click", calculateRatio);
   document.getElementById("resetBtn").addEventListener("click", resetCalculator);
+  initializeQuickAdd();
 
-  // Load Table Data
-  fetch("../data/compost.json")
-    .then(r => r.json())
-    .then(buildTable)
-    .catch(err => console.error("Data load error:", err));
+  if (window.location.protocol === "file:") {
+    displayLoadError(new Error("The compost table requires a local web server."));
+    return;
+  }
+
+  // Load table data relative to the page URL so it works in local dev and production.
+  const dataUrl = new URL("data/compost.json", window.location.href);
+
+  fetch(dataUrl)
+    .then(r => {
+      if (!r.ok) {
+        throw new Error(`HTTP ${r.status}`);
+      }
+
+      return r.json();
+    })
+    .then(data => {
+      compostData = data;
+      buildTable(data);
+      renderSearchResults("");
+    })
+    .catch(displayLoadError);
 });
 
 /* ================= TABLE LOGIC ================= */
@@ -28,15 +47,12 @@ function buildTable(data) {
   const tbody = document.querySelector("#compostTable tbody");
   tbody.innerHTML = ""; // Clear existing
 
-  data.forEach(item => {
+  data.forEach((item, index) => {
     const tr = document.createElement("tr");
     tr.className = item.category ? item.category.toLowerCase() : ""; 
-    
-    // Create Select Button
-    const btnId = `btn-${item.name.replace(/\s+/g, '')}`;
-    
+
     tr.innerHTML = `
-      <td><button class="btn btn-select" data-item='${JSON.stringify(item)}'>Select</button></td>
+      <td><button class="btn btn-select" data-index="${index}">Select</button></td>
       <td>${item.name}</td>
       <td>${item.category}</td>
       <td>${item.cn_ratio}</td>
@@ -49,14 +65,43 @@ function buildTable(data) {
   // Attach listeners to all new select buttons
   document.querySelectorAll(".btn-select").forEach(btn => {
     btn.addEventListener("click", (e) => {
-      const itemData = JSON.parse(e.target.getAttribute("data-item"));
+      const itemIndex = Number(e.currentTarget.getAttribute("data-index"));
+      const itemData = compostData[itemIndex];
+
+      if (!itemData) {
+        return;
+      }
+
       addToCalculator(itemData);
-      // Optional: Scroll to calculator
-      document.querySelector(".calc-container").scrollIntoView({ behavior: 'smooth' });
+      scrollToCalculator();
     });
   });
 
   addSortHandlers();
+}
+
+function displayLoadError(err) {
+  console.error("Data load error:", err);
+
+  const tbody = document.querySelector("#compostTable tbody");
+  tbody.innerHTML = `
+    <tr>
+      <td colspan="6">
+        Unable to load compost data. Open this page through a local web server instead of
+        opening the HTML file directly, then visit http://localhost:3000/compostTable.html.
+      </td>
+    </tr>`;
+
+  const searchStatus = document.getElementById("searchStatus");
+  const searchResults = document.getElementById("searchResults");
+
+  if (searchStatus) {
+    searchStatus.textContent = "The quick-add search is unavailable until the compost data loads.";
+  }
+
+  if (searchResults) {
+    searchResults.innerHTML = "";
+  }
 }
 
 function addSortHandlers() {
@@ -83,6 +128,168 @@ function addSortHandlers() {
       rows.forEach(r => tbody.appendChild(r));
     });
   });
+}
+
+function initializeQuickAdd() {
+  const searchInput = document.getElementById("materialSearch");
+  const addTopMatchBtn = document.getElementById("addSearchMatchBtn");
+
+  searchInput.addEventListener("input", () => {
+    renderSearchResults(searchInput.value);
+  });
+
+  searchInput.addEventListener("keydown", (event) => {
+    if (event.key !== "Enter") {
+      return;
+    }
+
+    event.preventDefault();
+    addFirstSearchMatch();
+  });
+
+  addTopMatchBtn.addEventListener("click", addFirstSearchMatch);
+}
+
+function renderSearchResults(query) {
+  const searchStatus = document.getElementById("searchStatus");
+  const searchResults = document.getElementById("searchResults");
+  const trimmedQuery = query.trim();
+
+  searchResults.innerHTML = "";
+
+  if (!compostData.length) {
+    searchStatus.textContent = "Loading compost materials...";
+    return;
+  }
+
+  if (!trimmedQuery) {
+    searchStatus.textContent = "Start typing to search brown and green materials.";
+    return;
+  }
+
+  const matches = getSearchMatches(trimmedQuery);
+
+  if (!matches.length) {
+    searchStatus.textContent = `No matches found for "${trimmedQuery}".`;
+    return;
+  }
+
+  searchStatus.textContent = `Showing ${matches.length} match${matches.length === 1 ? "" : "es"} for "${trimmedQuery}". Press Enter to add the top result.`;
+
+  matches.forEach(match => {
+    searchResults.appendChild(createSearchResultCard(match));
+  });
+}
+
+function getSearchMatches(query) {
+  const normalizedQuery = query.trim().toLowerCase();
+
+  return compostData
+    .map((item, index) => ({ item, index, score: getSearchScore(item, normalizedQuery) }))
+    .filter(entry => entry.score > 0)
+    .sort((a, b) => b.score - a.score || a.item.name.localeCompare(b.item.name))
+    .slice(0, 6);
+}
+
+function getSearchScore(item, query) {
+  const name = (item.name || "").toLowerCase();
+  const category = (item.category || "").toLowerCase();
+  const notes = (item.notes || "").toLowerCase();
+
+  let score = 0;
+
+  if (name === query) score += 120;
+  if (name.startsWith(query)) score += 80;
+  if (name.includes(query)) score += 45;
+  if (category.includes(query)) score += 20;
+  if (notes.includes(query)) score += 10;
+
+  return score;
+}
+
+function createSearchResultCard(match) {
+  const { item, index } = match;
+  const card = document.createElement("div");
+  card.className = "quick-add-card";
+
+  const copy = document.createElement("div");
+  copy.className = "quick-add-copy";
+
+  const title = document.createElement("strong");
+  title.textContent = item.name;
+  copy.appendChild(title);
+
+  const meta = document.createElement("div");
+  meta.className = "quick-add-meta";
+
+  const categoryPill = document.createElement("span");
+  categoryPill.className = `category-pill ${(item.category || "").toLowerCase()}`;
+  categoryPill.textContent = item.category || "Uncategorized";
+  meta.appendChild(categoryPill);
+
+  const ratioText = document.createElement("span");
+  ratioText.textContent = ` C:N ${item.cn_ratio || "N/A"}`;
+  meta.appendChild(ratioText);
+
+  copy.appendChild(meta);
+
+  if (item.notes) {
+    const notes = document.createElement("div");
+    notes.className = "quick-add-meta";
+    notes.textContent = item.notes;
+    copy.appendChild(notes);
+  }
+
+  const addButton = document.createElement("button");
+  addButton.type = "button";
+  addButton.className = "btn btn-quick-add";
+  addButton.textContent = "Add";
+  addButton.addEventListener("click", () => {
+    addMaterialByIndex(index);
+  });
+
+  card.appendChild(copy);
+  card.appendChild(addButton);
+
+  return card;
+}
+
+function addFirstSearchMatch() {
+  const searchInput = document.getElementById("materialSearch");
+  const trimmedQuery = searchInput.value.trim();
+
+  if (!trimmedQuery) {
+    renderSearchResults("");
+    return;
+  }
+
+  const [topMatch] = getSearchMatches(trimmedQuery);
+
+  if (!topMatch) {
+    renderSearchResults(trimmedQuery);
+    return;
+  }
+
+  addMaterialByIndex(topMatch.index);
+}
+
+function addMaterialByIndex(index) {
+  const item = compostData[index];
+
+  if (!item) {
+    return;
+  }
+
+  addToCalculator(item);
+  scrollToCalculator();
+
+  const searchInput = document.getElementById("materialSearch");
+  const searchStatus = document.getElementById("searchStatus");
+  const searchResults = document.getElementById("searchResults");
+
+  searchInput.value = "";
+  searchResults.innerHTML = "";
+  searchStatus.textContent = `${item.name} added to the calculator.`;
 }
 
 /* ================= CALCULATOR LOGIC ================= */
@@ -125,6 +332,10 @@ function addToCalculator(item) {
 
     renderCalcRows();
     calculateRatio(); // Auto calc on add
+}
+
+function scrollToCalculator() {
+    document.querySelector(".calc-container").scrollIntoView({ behavior: "smooth" });
 }
 
 function renderCalcRows() {
