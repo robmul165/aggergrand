@@ -51,6 +51,91 @@
       font-size: 0.8em;
       padding: 5px 10px;
     }
+    .quick-add-panel {
+      background: #fcfcf8;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 1000px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+    .quick-add-panel h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+    .quick-add-controls {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .quick-add-controls input {
+      flex: 1 1 320px;
+      min-width: 220px;
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font: inherit;
+    }
+    .quick-add-status {
+      min-height: 22px;
+      margin-top: 10px;
+      color: #37543b;
+      font-size: 0.95rem;
+    }
+    .quick-add-results {
+      margin-top: 12px;
+      display: grid;
+      gap: 10px;
+    }
+    .quick-add-card {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      padding: 12px;
+      border: 1px solid #d8d8d8;
+      border-radius: 6px;
+      background: #fff;
+    }
+    .quick-add-copy strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+    .quick-add-meta {
+      color: #555;
+      font-size: 0.9rem;
+    }
+    .category-pill {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+    .category-pill.brown {
+      background: #efe1cf;
+      color: #6a431c;
+    }
+    .category-pill.green {
+      background: #dbeedb;
+      color: #245227;
+    }
+    .btn-quick-add {
+      white-space: nowrap;
+    }
+    @media (max-width: 700px) {
+      .quick-add-card {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      .quick-add-controls .btn,
+      .quick-add-card .btn {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -102,6 +187,23 @@
     </form>
   </div>
 
+  <div class="quick-add-panel">
+    <h3>Quick Add a Material</h3>
+    <p>Search both brown and green compostables, then add a match directly into the calculator.</p>
+    <div class="quick-add-controls">
+      <input
+        type="search"
+        id="materialSearch"
+        placeholder="Search by material, category, or note"
+        aria-label="Search compost materials"
+        autocomplete="off"
+      >
+      <button type="button" class="btn" id="addSearchMatchBtn">Add Top Match</button>
+    </div>
+    <div class="quick-add-status" id="searchStatus" aria-live="polite"></div>
+    <div class="quick-add-results" id="searchResults"></div>
+  </div>
+
   <h1 style="text-align: center;">Compostable Materials Database</h1>
 
   <table id="compostTable">
@@ -117,7 +219,7 @@
     <tbody></tbody>
   </table>
 
-  <script type="module" src="script/compostScript.js"></script>
+  <script src="script/compostScript.js" defer></script>
 
   <footer>
     &copy; <span id="year"></span> Agger Grand. All rights reserved.
