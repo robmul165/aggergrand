@@ -9,10 +9,7 @@ const calcState = [
 let compostData = [];
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Initialize Calculator Rows
   renderCalcRows();
-
-  // Attach Event Listeners for Calculator
   document.getElementById("calculateBtn").addEventListener("click", calculateRatio);
   document.getElementById("resetBtn").addEventListener("click", resetCalculator);
   initializeQuickAdd();
@@ -22,20 +19,20 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  // Load table data relative to the page URL so it works in local dev and production.
-  const dataUrl = new URL("data/compost.json", window.location.href);
+  // Define paths for your new split files
+  const brownsUrl = new URL("data/compostBrowns.json", window.location.href);
+  const greensUrl = new URL("data/compostGreens.json", window.location.href);
 
-  fetch(dataUrl)
-    .then(r => {
-      if (!r.ok) {
-        throw new Error(`HTTP ${r.status}`);
-      }
-
-      return r.json();
-    })
-    .then(data => {
-      compostData = data;
-      buildTable(data);
+  // Use Promise.all to fetch both files at once
+  Promise.all([
+    fetch(brownsUrl).then(r => r.ok ? r.json() : Promise.reject(`Failed to load Browns: ${r.status}`)),
+    fetch(greensUrl).then(r => r.ok ? r.json() : Promise.reject(`Failed to load Greens: ${r.status}`))
+  ])
+    .then(([browns, greens]) => {
+      // Merge them into one master array for the UI to use
+      compostData = [...browns, ...greens]; 
+      
+      buildTable(compostData);
       renderSearchResults("");
     })
     .catch(displayLoadError);
@@ -295,17 +292,28 @@ function addMaterialByIndex(index) {
 /* ================= CALCULATOR LOGIC ================= */
 
 function addToCalculator(item) {
+    console.log("Adding item:", item); // Debugging line
+
     // Find first empty slot or overwrite the last one if full
     let index = calcState.findIndex(s => s.name === "");
-    if (index === -1) index = 2; // Default to last slot if full
+    if (index === -1) index = 2; 
 
-    // Parse Data Helper
-    const parseNum = (val) => {
-        if (!val) return 0;
-        // Remove ~, >, <, :1 and other non-numeric chars except .
-        const clean = val.toString().replace(/[^0-9.]/g, ''); 
-        return parseFloat(clean) || 0;
+    // Match these exactly to your new JSON keys
+    const nPercent = item.Nitrogen_Percent || 0;
+    const cPercent = item.Carbon_Percent || 0;
+    const moisture = item.moisture_percent || 0;
+    
+    calcState[index] = {
+        name: item.name || "Unknown",
+        weight: 10, 
+        moisture: moisture,
+        nitrogen: nPercent,
+        carbon: cPercent
     };
+
+    renderCalcRows();
+    calculateRatio(); 
+}
 
     // Parse specific fields from JSON
     const nPercent = parseNum(item["N%"]);
@@ -332,7 +340,7 @@ function addToCalculator(item) {
 
     renderCalcRows();
     calculateRatio(); // Auto calc on add
-}
+
 
 function scrollToCalculator() {
     document.querySelector(".calc-container").scrollIntoView({ behavior: "smooth" });
