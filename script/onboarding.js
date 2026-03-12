@@ -5,19 +5,14 @@
     return;
   }
 
-  var user = window.AggerAuth.requireLogin("../login/login.html");
-  if (!user) {
-    return;
-  }
-
   var form = document.getElementById("onboardingForm");
   var statusEl = document.getElementById("onboardingStatus");
   var currentUserEmailEl = document.getElementById("currentUserEmail");
   var submissionListEl = document.getElementById("submissionList");
   var logoutBtn = document.getElementById("logoutBtn");
+  var deleteAccountBtn = document.getElementById("deleteAccountBtn");
   var emailInput = document.getElementById("email");
-
-  currentUserEmailEl.textContent = user.email;
+  var activeUser = null;
 
   function setStatus(message, kind) {
     statusEl.textContent = message || "";
@@ -52,7 +47,7 @@
     if (!profile) return;
     document.getElementById("firstName").value = profile.firstName || "";
     document.getElementById("lastName").value = profile.lastName || "";
-    document.getElementById("email").value = profile.email || user.email || "";
+    document.getElementById("email").value = profile.email || (activeUser && activeUser.email) || "";
     document.getElementById("phone").value = profile.phone || "";
     document.getElementById("location").value = profile.location || "";
     document.getElementById("growType").value = profile.growType || "";
@@ -60,8 +55,8 @@
     document.getElementById("goals").value = profile.goals || "";
   }
 
-  function renderSubmissions() {
-    var records = window.AggerAuth.listOnboardingRecords(user.id);
+  async function renderSubmissions() {
+    var records = await window.AggerAuth.listOnboardingRecords();
     if (!records.length) {
       submissionListEl.innerHTML = "<li>No saved onboarding data yet.</li>";
       return;
@@ -84,13 +79,13 @@
 
   function keepDefaultEmail() {
     window.setTimeout(function () {
-      if (!emailInput.value.trim()) {
-        emailInput.value = user.email;
+      if (!emailInput.value.trim() && activeUser) {
+        emailInput.value = activeUser.email;
       }
     }, 0);
   }
 
-  form.addEventListener("submit", function (event) {
+  form.addEventListener("submit", async function (event) {
     event.preventDefault();
     if (!form.checkValidity()) {
       setStatus("Please complete all required fields.", "error");
@@ -99,7 +94,7 @@
 
     try {
       var profile = getProfileFromForm();
-      var saved = window.AggerAuth.saveOnboardingRecord({
+      var saved = await window.AggerAuth.saveOnboardingRecord({
         profile: profile,
         inputs: {
           source: "onboarding_form_v1"
@@ -108,7 +103,7 @@
         discussion: "Onboarding submission"
       });
       setStatus("Saved on " + new Date(saved.createdAt).toLocaleString() + ".", "success");
-      renderSubmissions();
+      await renderSubmissions();
     } catch (error) {
       setStatus(error.message || "Unable to save onboarding data.", "error");
     }
@@ -116,11 +111,54 @@
 
   form.addEventListener("reset", keepDefaultEmail);
 
-  logoutBtn.addEventListener("click", function () {
-    window.AggerAuth.logout();
+  logoutBtn.addEventListener("click", async function () {
+    try {
+      await window.AggerAuth.logout();
+    } catch (error) {
+      setStatus(error.message || "Unable to log out.", "error");
+      return;
+    }
     window.location.href = "../login/login.html";
   });
 
-  emailInput.value = user.email;
-  renderSubmissions();
+  if (deleteAccountBtn) {
+    deleteAccountBtn.addEventListener("click", async function () {
+      if (!activeUser) {
+        setStatus("No authenticated user to delete.", "error");
+        return;
+      }
+
+      var confirmed = window.confirm(
+        "Delete account " + activeUser.email + " and all onboarding records? This is for development testing."
+      );
+      if (!confirmed) {
+        return;
+      }
+
+      try {
+        await window.AggerAuth.deleteAccount();
+      } catch (error) {
+        setStatus(error.message || "Unable to delete account.", "error");
+        return;
+      }
+
+      window.location.href = "../login/login.html";
+    });
+  }
+
+  async function initialize() {
+    try {
+      activeUser = await window.AggerAuth.requireLogin("../login/login.html");
+      if (!activeUser) {
+        return;
+      }
+      currentUserEmailEl.textContent = activeUser.email;
+      emailInput.value = activeUser.email;
+      await renderSubmissions();
+    } catch (error) {
+      setStatus(error.message || "Unable to load onboarding data.", "error");
+    }
+  }
+
+  initialize();
 })();

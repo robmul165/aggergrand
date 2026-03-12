@@ -1,6 +1,10 @@
 (function () {
   "use strict";
 
+  if (!window.AggerAuth) {
+    return;
+  }
+
   var authForm = document.getElementById("authForm");
   var emailInput = document.getElementById("email");
   var passwordInput = document.getElementById("password");
@@ -13,6 +17,7 @@
   var submissionCountEl = document.getElementById("submissionCount");
   var submissionListEl = document.getElementById("submissionList");
   var logoutBtn = document.getElementById("logoutBtn");
+  var deleteAccountBtn = document.getElementById("deleteAccountBtn");
 
   function setStatus(message, kind) {
     statusEl.textContent = message || "";
@@ -45,13 +50,8 @@
     };
   }
 
-  function renderCurrentUserPanel() {
-    if (!window.AggerAuth) {
-      setStatus("Auth module failed to load.", "error");
-      return;
-    }
-
-    var user = window.AggerAuth.getCurrentUser();
+  async function renderCurrentUserPanel() {
+    var user = await window.AggerAuth.getCurrentUser();
     if (!user) {
       currentUserPanel.hidden = true;
       currentUserEmailEl.textContent = "";
@@ -60,7 +60,7 @@
       return;
     }
 
-    var records = window.AggerAuth.listOnboardingRecords(user.id);
+    var records = await window.AggerAuth.listOnboardingRecords();
     currentUserPanel.hidden = false;
     currentUserEmailEl.textContent = user.email;
     submissionCountEl.textContent = String(records.length);
@@ -84,7 +84,7 @@
         password: passwordInput.value
       });
       setStatus("Signed in successfully. Redirecting to onboarding...", "success");
-      renderCurrentUserPanel();
+      await renderCurrentUserPanel();
       clearForm();
       window.setTimeout(function () {
         window.location.href = "../onboarding/onboard.html";
@@ -103,7 +103,7 @@
         displayName: displayNameInput.value
       });
       setStatus("Account created. Redirecting to onboarding...", "success");
-      renderCurrentUserPanel();
+      await renderCurrentUserPanel();
       clearForm();
       window.setTimeout(function () {
         window.location.href = "../onboarding/onboard.html";
@@ -113,19 +113,70 @@
     }
   }
 
-  function handleLogout() {
-    window.AggerAuth.logout();
-    renderCurrentUserPanel();
-    setStatus("You are logged out.", "success");
+  async function handleLogout() {
+    try {
+      await window.AggerAuth.logout();
+      await renderCurrentUserPanel();
+      setStatus("You are logged out.", "success");
+    } catch (error) {
+      setStatus(error.message || "Unable to log out.", "error");
+    }
   }
 
-  loginBtn.addEventListener("click", handleLogin);
-  createAccountBtn.addEventListener("click", handleCreateAccount);
-  logoutBtn.addEventListener("click", handleLogout);
+  async function handleDeleteAccount() {
+    var user;
+    try {
+      user = await window.AggerAuth.getCurrentUser();
+    } catch (error) {
+      setStatus(error.message || "Unable to check account state.", "error");
+      return;
+    }
+
+    if (!user) {
+      setStatus("Sign in first to delete an account.", "error");
+      return;
+    }
+
+    var confirmed = window.confirm(
+      "Delete account " + user.email + " and all onboarding records? This is for development testing."
+    );
+    if (!confirmed) {
+      return;
+    }
+
+    try {
+      await window.AggerAuth.deleteAccount();
+      await renderCurrentUserPanel();
+      setStatus("Account deleted. You can now re-register the same email.", "success");
+      emailInput.value = user.email;
+      passwordInput.value = "";
+      displayNameInput.value = "";
+      emailInput.focus();
+    } catch (error) {
+      setStatus(error.message || "Unable to delete account.", "error");
+    }
+  }
+
+  loginBtn.addEventListener("click", function () {
+    handleLogin();
+  });
+  createAccountBtn.addEventListener("click", function () {
+    handleCreateAccount();
+  });
+  logoutBtn.addEventListener("click", function () {
+    handleLogout();
+  });
+  if (deleteAccountBtn) {
+    deleteAccountBtn.addEventListener("click", function () {
+      handleDeleteAccount();
+    });
+  }
   authForm.addEventListener("submit", function (event) {
     event.preventDefault();
     handleLogin();
   });
 
-  renderCurrentUserPanel();
+  renderCurrentUserPanel().catch(function () {
+    currentUserPanel.hidden = true;
+  });
 })();

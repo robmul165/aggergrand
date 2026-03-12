@@ -3,3 +3,5 @@
 /README.md
 /data/workspace_auth_snapshot.local.json
 /__pycache__/
+/.env
+/backend/.env
