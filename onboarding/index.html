@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onboarding - Agger Grand</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/auth.css">
+</head>
+<body class="auth-page">
+  <div class="topbar">
+    <div class="logo-container">
+      <a href="../index.html">
+        <img src="../images/logo.jpg" alt="Agger Grand Logo" class="logo">
+      </a>
+    </div>
+    <nav>
+      <a href="../digitalTools.html" class="header">Digital Tools</a>
+      <a href="../soilTesting.html" class="header">Soil Testing</a>
+      <a href="../blog.html" class="header">Blog</a>
+      <a href="../aboutUs.html" class="header">About Us</a>
+    </nav>
+  </div>
+
+  <main class="auth-container">
+    <section class="auth-card">
+      <h1>Onboarding Form</h1>
+      <p>Tell us about your growing setup. Each submit is saved to your user account history.</p>
+      <p class="inline-note"><strong>Current user:</strong> <span id="currentUserEmail">-</span></p>
+
+      <form id="onboardingForm" class="auth-form" novalidate>
+        <div class="auth-row">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" required>
+        </div>
+
+        <div class="auth-row">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" required>
+        </div>
+
+        <div class="auth-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </div>
+
+        <div class="auth-row">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel">
+        </div>
+
+        <div class="auth-row">
+          <label for="location">Location</label>
+          <input type="text" id="location" name="location" placeholder="City, State">
+        </div>
+
+        <div class="auth-row">
+          <label for="growType">Grow Type</label>
+          <select id="growType" name="growType" required>
+            <option value="">Select one...</option>
+            <option value="home-garden">Home Garden</option>
+            <option value="indoor-grow">Indoor Grow</option>
+            <option value="farm">Farm</option>
+            <option value="greenhouse">Greenhouse</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="auth-row">
+          <label for="experienceLevel">Experience Level</label>
+          <select id="experienceLevel" name="experienceLevel" required>
+            <option value="">Select one...</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+            <option value="professional">Professional</option>
+          </select>
+        </div>
+
+        <div class="auth-row">
+          <label for="goals">Growing Goals</label>
+          <textarea id="goals" name="goals" placeholder="What outcomes are you trying to achieve?"></textarea>
+        </div>
+
+        <div class="auth-actions">
+          <button type="submit" class="auth-btn auth-btn-primary">Save Onboarding</button>
+          <button type="reset" class="auth-btn auth-btn-secondary">Clear Form</button>
+          <a href="../login/" class="auth-btn auth-btn-secondary">Back to Login</a>
+          <button type="button" id="logoutBtn" class="auth-btn auth-btn-secondary">Log Out</button>
+        </div>
+
+        <p id="onboardingStatus" class="status-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="auth-card">
+      <h2>Saved Submissions</h2>
+      <p class="inline-note">Most recent entries for this logged-in user.</p>
+      <ul id="submissionList" class="submission-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Agger Grand. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="../script/auth.js"></script>
+  <script src="../script/onboarding.js"></script>
+</body>
+</html>

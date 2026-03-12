@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Agger Grand</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/auth.css">
+</head>
+<body class="auth-page">
+  <div class="topbar">
+    <div class="logo-container">
+      <a href="../index.html">
+        <img src="../images/logo.jpg" alt="Agger Grand Logo" class="logo">
+      </a>
+    </div>
+    <nav>
+      <a href="../digitalTools.html" class="header">Digital Tools</a>
+      <a href="../soilTesting.html" class="header">Soil Testing</a>
+      <a href="../blog.html" class="header">Blog</a>
+      <a href="../aboutUs.html" class="header">About Us</a>
+    </nav>
+  </div>
+
+  <main class="auth-container">
+    <section class="auth-card">
+      <h1>LOGIN</h1>
+      <p>Sign in to continue, or create a new account if you are new to Agger Grand.</p>
+
+      <form id="authForm" class="auth-form" novalidate>
+        <div class="auth-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </div>
+
+        <div class="auth-row">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" autocomplete="current-password" required>
+        </div>
+
+        <div class="auth-row">
+          <label for="displayName">Name (optional when creating account)</label>
+          <input type="text" id="displayName" name="displayName" autocomplete="name">
+        </div>
+
+        <div class="auth-actions">
+          <button type="button" id="loginBtn" class="auth-btn auth-btn-primary">Sign In</button>
+          <button type="button" id="createAccountBtn" class="auth-btn auth-btn-secondary">Create Account</button>
+          <a href="../onboarding/" class="auth-btn auth-btn-secondary">Open Onboarding</a>
+        </div>
+
+        <p id="authStatus" class="status-message" role="status" aria-live="polite"></p>
+      </form>
+
+      <div id="currentUserPanel" class="account-summary" hidden>
+        <p><strong>Signed in as:</strong> <span id="currentUserEmail"></span></p>
+        <p><strong>Saved onboarding submissions:</strong> <span id="submissionCount">0</span></p>
+        <ul id="submissionList" class="submission-list"></ul>
+
+        <div class="auth-actions">
+          <a href="../onboarding/" class="auth-btn auth-btn-primary">Continue to Onboarding</a>
+          <button type="button" id="logoutBtn" class="auth-btn auth-btn-secondary">Log Out</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Agger Grand. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="../script/auth.js"></script>
+  <script src="../script/login.js"></script>
+</body>
+</html>

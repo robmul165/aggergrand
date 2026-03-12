@@ -267,6 +267,12 @@ header .logo {
   color: #333;
 }
 
+.grid-item-login {
+  grid-column: 1 / -1;
+  max-width: 390px;
+  justify-self: center;
+}
+
 .grid-item:hover {
   background: #c8e6c9;
 }
@@ -283,6 +289,11 @@ footer {
   .grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+  }
+
+  .grid-item-login {
+    max-width: none;
+    justify-self: stretch;
   }
 
   .topbar {

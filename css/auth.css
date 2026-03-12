@@ -1,0 +1,153 @@
+body.auth-page {
+  background: #e8f5e9;
+  text-align: center;
+}
+
+.auth-container {
+  max-width: 860px;
+  margin: 40px auto;
+}
+
+.auth-card {
+  max-width: 680px;
+  margin: 20px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.auth-card h1,
+.auth-card h2 {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.auth-card p {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.auth-form {
+  display: grid;
+  gap: 14px;
+}
+
+.auth-row {
+  display: grid;
+  gap: 8px;
+}
+
+.auth-form label {
+  font-weight: 600;
+}
+
+.auth-form input,
+.auth-form select,
+.auth-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #c9d6c9;
+  border-radius: 6px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.auth-form textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.auth-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.auth-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.auth-btn-primary {
+  background: #278037;
+  color: #fff;
+}
+
+.auth-btn-primary:hover {
+  background: #1c5a28;
+}
+
+.auth-btn-secondary {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.auth-btn-secondary:hover {
+  background: #dfe7df;
+}
+
+.status-message {
+  min-height: 1.2rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.status-error {
+  color: #a12727;
+}
+
+.status-success {
+  color: #1f6d31;
+}
+
+.account-summary {
+  background: #f5f8f5;
+  border: 1px solid #d6e4d6;
+  border-radius: 6px;
+  padding: 12px;
+  margin-top: 14px;
+}
+
+.submission-list {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+}
+
+.submission-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.submission-list li:last-child {
+  border-bottom: none;
+}
+
+.inline-note {
+  color: #586758;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+  .auth-card {
+    margin: 16px;
+    padding: 18px;
+  }
+
+  .auth-actions {
+    flex-direction: column;
+  }
+
+  .auth-btn {
+    width: 100%;
+  }
+}
