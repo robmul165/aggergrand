@@ -4,6 +4,7 @@
   var USERS_KEY = "aggergrand_users_v1";
   var CURRENT_USER_KEY = "aggergrand_current_user_id_v1";
   var ONBOARDING_KEY = "aggergrand_onboarding_records_v1";
+  var WORKSPACE_SYNC_ENDPOINT = "/api/storage/snapshot";
 
   function readJson(key, fallbackValue) {
     try {
@@ -18,6 +19,89 @@
 
   function writeJson(key, value) {
     window.localStorage.setItem(key, JSON.stringify(value));
+  }
+
+  function isHttpProtocol() {
+    return window.location.protocol === "http:" || window.location.protocol === "https:";
+  }
+
+  function normalizeSnapshot(snapshot) {
+    var input = snapshot && typeof snapshot === "object" ? snapshot : {};
+    return {
+      users: Array.isArray(input.users) ? input.users : [],
+      currentUserId: typeof input.currentUserId === "string" && input.currentUserId ? input.currentUserId : null,
+      onboardingRecords: Array.isArray(input.onboardingRecords) ? input.onboardingRecords : []
+    };
+  }
+
+  function hasSnapshotData(snapshot) {
+    if (!snapshot) return false;
+    if (snapshot.users && snapshot.users.length) return true;
+    if (snapshot.onboardingRecords && snapshot.onboardingRecords.length) return true;
+    return !!snapshot.currentUserId;
+  }
+
+  function getLocalSnapshot() {
+    return {
+      users: getUsers(),
+      currentUserId: getCurrentUserId(),
+      onboardingRecords: readJson(ONBOARDING_KEY, [])
+    };
+  }
+
+  function applySnapshotToLocalStorage(snapshot) {
+    var normalized = normalizeSnapshot(snapshot);
+    window.localStorage.setItem(USERS_KEY, JSON.stringify(normalized.users));
+    window.localStorage.setItem(ONBOARDING_KEY, JSON.stringify(normalized.onboardingRecords));
+
+    if (normalized.currentUserId) {
+      window.localStorage.setItem(CURRENT_USER_KEY, normalized.currentUserId);
+    } else {
+      window.localStorage.removeItem(CURRENT_USER_KEY);
+    }
+  }
+
+  function requestWorkspaceSnapshotSync(method, payload) {
+    if (!isHttpProtocol()) return null;
+
+    try {
+      var xhr = new XMLHttpRequest();
+      xhr.open(method, WORKSPACE_SYNC_ENDPOINT, false);
+      if (method === "POST") {
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.send(JSON.stringify({ snapshot: normalizeSnapshot(payload) }));
+      } else {
+        xhr.send();
+      }
+
+      if (xhr.status < 200 || xhr.status >= 300) {
+        return null;
+      }
+
+      var parsed = xhr.responseText ? JSON.parse(xhr.responseText) : {};
+      var snapshot = parsed && parsed.snapshot ? parsed.snapshot : parsed;
+      return normalizeSnapshot(snapshot);
+    } catch (error) {
+      return null;
+    }
+  }
+
+  function hydrateLocalStorageFromWorkspace() {
+    var localSnapshot = normalizeSnapshot(getLocalSnapshot());
+    var workspaceSnapshot = requestWorkspaceSnapshotSync("GET");
+
+    if (workspaceSnapshot && hasSnapshotData(workspaceSnapshot)) {
+      applySnapshotToLocalStorage(workspaceSnapshot);
+      return;
+    }
+
+    if (hasSnapshotData(localSnapshot)) {
+      requestWorkspaceSnapshotSync("POST", localSnapshot);
+    }
+  }
+
+  function syncWorkspaceSnapshot() {
+    requestWorkspaceSnapshotSync("POST", getLocalSnapshot());
   }
 
   function normalizeEmail(email) {
@@ -56,6 +140,7 @@
 
   function setUsers(users) {
     writeJson(USERS_KEY, users);
+    syncWorkspaceSnapshot();
   }
 
   function findUserById(id) {
@@ -87,11 +172,17 @@
 
   function setCurrentUserId(userId) {
     window.localStorage.setItem(CURRENT_USER_KEY, userId);
+    syncWorkspaceSnapshot();
   }
 
   function clearCurrentUserId() {
     window.localStorage.removeItem(CURRENT_USER_KEY);
+    syncWorkspaceSnapshot();
   }
+
+  // If a local workspace API is available, use it as the durable store.
+  // This keeps the existing localStorage UX while persisting to workspace files.
+  hydrateLocalStorageFromWorkspace();
 
   async function register(payload) {
     var email = normalizeEmail(payload && payload.email);
@@ -178,7 +269,7 @@
   function requireLogin(redirectPath) {
     var user = getCurrentUser();
     if (user) return user;
-    window.location.href = redirectPath || "login/";
+    window.location.href = redirectPath || "login/login.html";
     return null;
   }
 
@@ -213,6 +304,7 @@
 
     records.push(record);
     writeJson(ONBOARDING_KEY, records);
+    syncWorkspaceSnapshot();
     return record;
   }
 
@@ -225,6 +317,7 @@
     requireLogin: requireLogin,
     saveOnboardingRecord: saveOnboardingRecord,
     listOnboardingRecords: listOnboardingRecords,
+    syncWorkspaceSnapshot: syncWorkspaceSnapshot,
     storageKeys: {
       users: USERS_KEY,
       currentUser: CURRENT_USER_KEY,

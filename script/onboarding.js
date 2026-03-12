@@ -5,7 +5,7 @@
     return;
   }
 
-  var user = window.AggerAuth.requireLogin("../login/");
+  var user = window.AggerAuth.requireLogin("../login/login.html");
   if (!user) {
     return;
   }
@@ -118,7 +118,7 @@
 
   logoutBtn.addEventListener("click", function () {
     window.AggerAuth.logout();
-    window.location.href = "../login/";
+    window.location.href = "../login/login.html";
   });
 
   emailInput.value = user.email;

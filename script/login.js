@@ -87,7 +87,7 @@
       renderCurrentUserPanel();
       clearForm();
       window.setTimeout(function () {
-        window.location.href = "../onboarding/";
+        window.location.href = "../onboarding/onboard.html";
       }, 500);
     } catch (error) {
       setStatus(error.message || "Unable to sign in.", "error");
@@ -106,7 +106,7 @@
       renderCurrentUserPanel();
       clearForm();
       window.setTimeout(function () {
-        window.location.href = "../onboarding/";
+        window.location.href = "../onboarding/onboard.html";
       }, 500);
     } catch (error) {
       setStatus(error.message || "Unable to create account.", "error");
