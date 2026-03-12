@@ -1,7 +1,37 @@
 # Local private docs
-/SOUL.MD
-/README.md
-/data/workspace_auth_snapshot.local.json
-/__pycache__/
-/.env
-/backend/.env
+# OS junk
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Python cache/artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual envs
+.venv/
+venv/
+env/
+ENV/
+
+# Local env/secrets
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+
+# Local DB/runtime
+data/db.sqlite3
+data/db.sqlite3-*
+*.sqlite3
+*.sqlite3-*
+celerybeat-schedule
+*.log
+
+# Local-only notes (if intended private)
+BRAIN.MD
+AGENTS.md
+SOUL.MD
