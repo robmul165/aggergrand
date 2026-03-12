@@ -1,4 +1,5 @@
 # Local private docs
 /SOUL.MD
+/README.md
 /data/workspace_auth_snapshot.local.json
 /__pycache__/
